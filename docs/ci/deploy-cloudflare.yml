@@ -74,3 +74,7 @@ jobs:
               repo: context.repo.repo,
               body: 'Preview build uploaded. Open the version preview URL from the Cloudflare dashboard (Workers → scalelist-website → Versions).'
             })
+
+> **Not yet active.** This file must live at `.github/workflows/deploy-cloudflare.yml`.
+> It could not be pushed automatically: the CLI token lacks the `workflow` scope.
+> Fix with `gh auth refresh -h github.com -s workflow`, then `git mv docs/ci/deploy-cloudflare.yml .github/workflows/`.

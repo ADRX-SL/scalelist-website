@@ -8,8 +8,8 @@ scalelist-website/
 │   ├── WORKFLOW.md               Lovable → GitHub → WordPress, step by step
 │   ├── MIGRATION.md              every legacy repo and its porting status
 │   └── AUDIT-2026-08-08.md       full infrastructure audit + repo inventory
-├── .github/workflows/
-│   └── deploy-cloudflare.yml     deploys the Worker (inactive until a token is added)
+├── docs/ci/                      CI pipeline awaiting `workflow` token scope
+│   └── (pending) see docs/ci/deploy-cloudflare.yml
 ├── package.json                  ONE dependency set for the whole site (was 56)
 └── src/
     ├── styles.css                DESIGN TOKENS — colours, type, spacing. Change the brand here.
