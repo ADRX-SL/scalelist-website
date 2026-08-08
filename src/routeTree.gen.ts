@@ -10,11 +10,30 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CustomersRouteImport } from './routes/customers'
 import { Route as DuplicateRouteImport } from './routes/duplicate'
+import { Route as EmailVerifierRouteImport } from './routes/email-verifier'
+import { Route as FreeEmailFinderRouteImport } from './routes/free-email-finder'
+import { Route as IntegrationsRouteImport } from './routes/integrations'
+import { Route as LeadMobileFinderRouteImport } from './routes/lead-mobile-finder'
+import { Route as McpServerRouteImport } from './routes/mcp-server'
+import { Route as MonitoringRouteImport } from './routes/monitoring'
+import { Route as RevopsRouteImport } from './routes/revops'
+import { Route as SalesMarketingRouteImport } from './routes/sales-marketing'
+import { Route as CustomersBdSRouteImport } from './routes/customers/bd-s'
+import { Route as CustomersGrowthLabzRouteImport } from './routes/customers/growth-labz'
+import { Route as CustomersOutreachAceRouteImport } from './routes/customers/outreach-ace'
+import { Route as IcpAgencyPartnerRouteImport } from './routes/icp/agency-partner'
+import { Route as IcpSaasB2bResellerRouteImport } from './routes/icp/saas-b2b-reseller'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CustomersRoute = CustomersRouteImport.update({
+  id: '/customers',
+  path: '/customers',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DuplicateRoute = DuplicateRouteImport.update({
@@ -22,31 +41,198 @@ const DuplicateRoute = DuplicateRouteImport.update({
   path: '/duplicate',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EmailVerifierRoute = EmailVerifierRouteImport.update({
+  id: '/email-verifier',
+  path: '/email-verifier',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FreeEmailFinderRoute = FreeEmailFinderRouteImport.update({
+  id: '/free-email-finder',
+  path: '/free-email-finder',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IntegrationsRoute = IntegrationsRouteImport.update({
+  id: '/integrations',
+  path: '/integrations',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LeadMobileFinderRoute = LeadMobileFinderRouteImport.update({
+  id: '/lead-mobile-finder',
+  path: '/lead-mobile-finder',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const McpServerRoute = McpServerRouteImport.update({
+  id: '/mcp-server',
+  path: '/mcp-server',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MonitoringRoute = MonitoringRouteImport.update({
+  id: '/monitoring',
+  path: '/monitoring',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RevopsRoute = RevopsRouteImport.update({
+  id: '/revops',
+  path: '/revops',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SalesMarketingRoute = SalesMarketingRouteImport.update({
+  id: '/sales-marketing',
+  path: '/sales-marketing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CustomersBdSRoute = CustomersBdSRouteImport.update({
+  id: '/bd-s',
+  path: '/bd-s',
+  getParentRoute: () => CustomersRoute,
+} as any)
+const CustomersGrowthLabzRoute = CustomersGrowthLabzRouteImport.update({
+  id: '/growth-labz',
+  path: '/growth-labz',
+  getParentRoute: () => CustomersRoute,
+} as any)
+const CustomersOutreachAceRoute = CustomersOutreachAceRouteImport.update({
+  id: '/outreach-ace',
+  path: '/outreach-ace',
+  getParentRoute: () => CustomersRoute,
+} as any)
+const IcpAgencyPartnerRoute = IcpAgencyPartnerRouteImport.update({
+  id: '/icp/agency-partner',
+  path: '/icp/agency-partner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IcpSaasB2bResellerRoute = IcpSaasB2bResellerRouteImport.update({
+  id: '/icp/saas-b2b-reseller',
+  path: '/icp/saas-b2b-reseller',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/customers': typeof CustomersRouteWithChildren
   '/duplicate': typeof DuplicateRoute
+  '/email-verifier': typeof EmailVerifierRoute
+  '/free-email-finder': typeof FreeEmailFinderRoute
+  '/integrations': typeof IntegrationsRoute
+  '/lead-mobile-finder': typeof LeadMobileFinderRoute
+  '/mcp-server': typeof McpServerRoute
+  '/monitoring': typeof MonitoringRoute
+  '/revops': typeof RevopsRoute
+  '/sales-marketing': typeof SalesMarketingRoute
+  '/customers/bd-s': typeof CustomersBdSRoute
+  '/customers/growth-labz': typeof CustomersGrowthLabzRoute
+  '/customers/outreach-ace': typeof CustomersOutreachAceRoute
+  '/icp/agency-partner': typeof IcpAgencyPartnerRoute
+  '/icp/saas-b2b-reseller': typeof IcpSaasB2bResellerRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/customers': typeof CustomersRouteWithChildren
   '/duplicate': typeof DuplicateRoute
+  '/email-verifier': typeof EmailVerifierRoute
+  '/free-email-finder': typeof FreeEmailFinderRoute
+  '/integrations': typeof IntegrationsRoute
+  '/lead-mobile-finder': typeof LeadMobileFinderRoute
+  '/mcp-server': typeof McpServerRoute
+  '/monitoring': typeof MonitoringRoute
+  '/revops': typeof RevopsRoute
+  '/sales-marketing': typeof SalesMarketingRoute
+  '/customers/bd-s': typeof CustomersBdSRoute
+  '/customers/growth-labz': typeof CustomersGrowthLabzRoute
+  '/customers/outreach-ace': typeof CustomersOutreachAceRoute
+  '/icp/agency-partner': typeof IcpAgencyPartnerRoute
+  '/icp/saas-b2b-reseller': typeof IcpSaasB2bResellerRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/customers': typeof CustomersRouteWithChildren
   '/duplicate': typeof DuplicateRoute
+  '/email-verifier': typeof EmailVerifierRoute
+  '/free-email-finder': typeof FreeEmailFinderRoute
+  '/integrations': typeof IntegrationsRoute
+  '/lead-mobile-finder': typeof LeadMobileFinderRoute
+  '/mcp-server': typeof McpServerRoute
+  '/monitoring': typeof MonitoringRoute
+  '/revops': typeof RevopsRoute
+  '/sales-marketing': typeof SalesMarketingRoute
+  '/customers/bd-s': typeof CustomersBdSRoute
+  '/customers/growth-labz': typeof CustomersGrowthLabzRoute
+  '/customers/outreach-ace': typeof CustomersOutreachAceRoute
+  '/icp/agency-partner': typeof IcpAgencyPartnerRoute
+  '/icp/saas-b2b-reseller': typeof IcpSaasB2bResellerRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/duplicate'
+  fullPaths:
+    | '/'
+    | '/customers'
+    | '/duplicate'
+    | '/email-verifier'
+    | '/free-email-finder'
+    | '/integrations'
+    | '/lead-mobile-finder'
+    | '/mcp-server'
+    | '/monitoring'
+    | '/revops'
+    | '/sales-marketing'
+    | '/customers/bd-s'
+    | '/customers/growth-labz'
+    | '/customers/outreach-ace'
+    | '/icp/agency-partner'
+    | '/icp/saas-b2b-reseller'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/duplicate'
-  id: '__root__' | '/' | '/duplicate'
+  to:
+    | '/'
+    | '/customers'
+    | '/duplicate'
+    | '/email-verifier'
+    | '/free-email-finder'
+    | '/integrations'
+    | '/lead-mobile-finder'
+    | '/mcp-server'
+    | '/monitoring'
+    | '/revops'
+    | '/sales-marketing'
+    | '/customers/bd-s'
+    | '/customers/growth-labz'
+    | '/customers/outreach-ace'
+    | '/icp/agency-partner'
+    | '/icp/saas-b2b-reseller'
+  id:
+    | '__root__'
+    | '/'
+    | '/customers'
+    | '/duplicate'
+    | '/email-verifier'
+    | '/free-email-finder'
+    | '/integrations'
+    | '/lead-mobile-finder'
+    | '/mcp-server'
+    | '/monitoring'
+    | '/revops'
+    | '/sales-marketing'
+    | '/customers/bd-s'
+    | '/customers/growth-labz'
+    | '/customers/outreach-ace'
+    | '/icp/agency-partner'
+    | '/icp/saas-b2b-reseller'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CustomersRoute: typeof CustomersRouteWithChildren
   DuplicateRoute: typeof DuplicateRoute
+  EmailVerifierRoute: typeof EmailVerifierRoute
+  FreeEmailFinderRoute: typeof FreeEmailFinderRoute
+  IntegrationsRoute: typeof IntegrationsRoute
+  LeadMobileFinderRoute: typeof LeadMobileFinderRoute
+  McpServerRoute: typeof McpServerRoute
+  MonitoringRoute: typeof MonitoringRoute
+  RevopsRoute: typeof RevopsRoute
+  SalesMarketingRoute: typeof SalesMarketingRoute
+  IcpAgencyPartnerRoute: typeof IcpAgencyPartnerRoute
+  IcpSaasB2bResellerRoute: typeof IcpSaasB2bResellerRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -58,6 +244,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/customers': {
+      id: '/customers'
+      path: '/customers'
+      fullPath: '/customers'
+      preLoaderRoute: typeof CustomersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/duplicate': {
       id: '/duplicate'
       path: '/duplicate'
@@ -65,12 +258,130 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DuplicateRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/email-verifier': {
+      id: '/email-verifier'
+      path: '/email-verifier'
+      fullPath: '/email-verifier'
+      preLoaderRoute: typeof EmailVerifierRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/free-email-finder': {
+      id: '/free-email-finder'
+      path: '/free-email-finder'
+      fullPath: '/free-email-finder'
+      preLoaderRoute: typeof FreeEmailFinderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/integrations': {
+      id: '/integrations'
+      path: '/integrations'
+      fullPath: '/integrations'
+      preLoaderRoute: typeof IntegrationsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lead-mobile-finder': {
+      id: '/lead-mobile-finder'
+      path: '/lead-mobile-finder'
+      fullPath: '/lead-mobile-finder'
+      preLoaderRoute: typeof LeadMobileFinderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mcp-server': {
+      id: '/mcp-server'
+      path: '/mcp-server'
+      fullPath: '/mcp-server'
+      preLoaderRoute: typeof McpServerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/monitoring': {
+      id: '/monitoring'
+      path: '/monitoring'
+      fullPath: '/monitoring'
+      preLoaderRoute: typeof MonitoringRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/revops': {
+      id: '/revops'
+      path: '/revops'
+      fullPath: '/revops'
+      preLoaderRoute: typeof RevopsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sales-marketing': {
+      id: '/sales-marketing'
+      path: '/sales-marketing'
+      fullPath: '/sales-marketing'
+      preLoaderRoute: typeof SalesMarketingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/customers/bd-s': {
+      id: '/customers/bd-s'
+      path: '/bd-s'
+      fullPath: '/customers/bd-s'
+      preLoaderRoute: typeof CustomersBdSRouteImport
+      parentRoute: typeof CustomersRoute
+    }
+    '/customers/growth-labz': {
+      id: '/customers/growth-labz'
+      path: '/growth-labz'
+      fullPath: '/customers/growth-labz'
+      preLoaderRoute: typeof CustomersGrowthLabzRouteImport
+      parentRoute: typeof CustomersRoute
+    }
+    '/customers/outreach-ace': {
+      id: '/customers/outreach-ace'
+      path: '/outreach-ace'
+      fullPath: '/customers/outreach-ace'
+      preLoaderRoute: typeof CustomersOutreachAceRouteImport
+      parentRoute: typeof CustomersRoute
+    }
+    '/icp/agency-partner': {
+      id: '/icp/agency-partner'
+      path: '/icp/agency-partner'
+      fullPath: '/icp/agency-partner'
+      preLoaderRoute: typeof IcpAgencyPartnerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/icp/saas-b2b-reseller': {
+      id: '/icp/saas-b2b-reseller'
+      path: '/icp/saas-b2b-reseller'
+      fullPath: '/icp/saas-b2b-reseller'
+      preLoaderRoute: typeof IcpSaasB2bResellerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
+interface CustomersRouteChildren {
+  CustomersBdSRoute: typeof CustomersBdSRoute
+  CustomersGrowthLabzRoute: typeof CustomersGrowthLabzRoute
+  CustomersOutreachAceRoute: typeof CustomersOutreachAceRoute
+}
+
+const CustomersRouteChildren: CustomersRouteChildren = {
+  CustomersBdSRoute: CustomersBdSRoute,
+  CustomersGrowthLabzRoute: CustomersGrowthLabzRoute,
+  CustomersOutreachAceRoute: CustomersOutreachAceRoute,
+}
+
+const CustomersRouteWithChildren = CustomersRoute._addFileChildren(
+  CustomersRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CustomersRoute: CustomersRouteWithChildren,
   DuplicateRoute: DuplicateRoute,
+  EmailVerifierRoute: EmailVerifierRoute,
+  FreeEmailFinderRoute: FreeEmailFinderRoute,
+  IntegrationsRoute: IntegrationsRoute,
+  LeadMobileFinderRoute: LeadMobileFinderRoute,
+  McpServerRoute: McpServerRoute,
+  MonitoringRoute: MonitoringRoute,
+  RevopsRoute: RevopsRoute,
+  SalesMarketingRoute: SalesMarketingRoute,
+  IcpAgencyPartnerRoute: IcpAgencyPartnerRoute,
+  IcpSaasB2bResellerRoute: IcpSaasB2bResellerRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
