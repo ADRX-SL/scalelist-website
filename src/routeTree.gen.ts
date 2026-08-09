@@ -26,6 +26,20 @@ import { Route as CustomersGrowthLabzRouteImport } from './routes/customers/grow
 import { Route as CustomersOutreachAceRouteImport } from './routes/customers/outreach-ace'
 import { Route as IcpAgencyPartnerRouteImport } from './routes/icp/agency-partner'
 import { Route as IcpSaasB2bResellerRouteImport } from './routes/icp/saas-b2b-reseller'
+import { Route as VsAeroleadsRouteImport } from './routes/vs/aeroleads'
+import { Route as VsAnymailFinderRouteImport } from './routes/vs/anymail-finder'
+import { Route as VsContactoutRouteImport } from './routes/vs/contactout'
+import { Route as VsFullenrichRouteImport } from './routes/vs/fullenrich'
+import { Route as VsHunterRouteImport } from './routes/vs/hunter'
+import { Route as VsKasprRouteImport } from './routes/vs/kaspr'
+import { Route as VsLeadiqRouteImport } from './routes/vs/leadiq'
+import { Route as VsLushaRouteImport } from './routes/vs/lusha'
+import { Route as VsProspeoRouteImport } from './routes/vs/prospeo'
+import { Route as VsRocketreachRouteImport } from './routes/vs/rocketreach'
+import { Route as VsSeamlessRouteImport } from './routes/vs/seamless'
+import { Route as VsSnovRouteImport } from './routes/vs/snov'
+import { Route as VsWizaRouteImport } from './routes/vs/wiza'
+import { Route as VsZoominfoRouteImport } from './routes/vs/zoominfo'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -112,6 +126,76 @@ const IcpSaasB2bResellerRoute = IcpSaasB2bResellerRouteImport.update({
   path: '/icp/saas-b2b-reseller',
   getParentRoute: () => rootRouteImport,
 } as any)
+const VsAeroleadsRoute = VsAeroleadsRouteImport.update({
+  id: '/vs/aeroleads',
+  path: '/vs/aeroleads',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsAnymailFinderRoute = VsAnymailFinderRouteImport.update({
+  id: '/vs/anymail-finder',
+  path: '/vs/anymail-finder',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsContactoutRoute = VsContactoutRouteImport.update({
+  id: '/vs/contactout',
+  path: '/vs/contactout',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsFullenrichRoute = VsFullenrichRouteImport.update({
+  id: '/vs/fullenrich',
+  path: '/vs/fullenrich',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsHunterRoute = VsHunterRouteImport.update({
+  id: '/vs/hunter',
+  path: '/vs/hunter',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsKasprRoute = VsKasprRouteImport.update({
+  id: '/vs/kaspr',
+  path: '/vs/kaspr',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsLeadiqRoute = VsLeadiqRouteImport.update({
+  id: '/vs/leadiq',
+  path: '/vs/leadiq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsLushaRoute = VsLushaRouteImport.update({
+  id: '/vs/lusha',
+  path: '/vs/lusha',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsProspeoRoute = VsProspeoRouteImport.update({
+  id: '/vs/prospeo',
+  path: '/vs/prospeo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsRocketreachRoute = VsRocketreachRouteImport.update({
+  id: '/vs/rocketreach',
+  path: '/vs/rocketreach',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsSeamlessRoute = VsSeamlessRouteImport.update({
+  id: '/vs/seamless',
+  path: '/vs/seamless',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsSnovRoute = VsSnovRouteImport.update({
+  id: '/vs/snov',
+  path: '/vs/snov',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsWizaRoute = VsWizaRouteImport.update({
+  id: '/vs/wiza',
+  path: '/vs/wiza',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VsZoominfoRoute = VsZoominfoRouteImport.update({
+  id: '/vs/zoominfo',
+  path: '/vs/zoominfo',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -131,6 +215,20 @@ export interface FileRoutesByFullPath {
   '/customers/outreach-ace': typeof CustomersOutreachAceRoute
   '/icp/agency-partner': typeof IcpAgencyPartnerRoute
   '/icp/saas-b2b-reseller': typeof IcpSaasB2bResellerRoute
+  '/vs/aeroleads': typeof VsAeroleadsRoute
+  '/vs/anymail-finder': typeof VsAnymailFinderRoute
+  '/vs/contactout': typeof VsContactoutRoute
+  '/vs/fullenrich': typeof VsFullenrichRoute
+  '/vs/hunter': typeof VsHunterRoute
+  '/vs/kaspr': typeof VsKasprRoute
+  '/vs/leadiq': typeof VsLeadiqRoute
+  '/vs/lusha': typeof VsLushaRoute
+  '/vs/prospeo': typeof VsProspeoRoute
+  '/vs/rocketreach': typeof VsRocketreachRoute
+  '/vs/seamless': typeof VsSeamlessRoute
+  '/vs/snov': typeof VsSnovRoute
+  '/vs/wiza': typeof VsWizaRoute
+  '/vs/zoominfo': typeof VsZoominfoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -150,6 +248,20 @@ export interface FileRoutesByTo {
   '/customers/outreach-ace': typeof CustomersOutreachAceRoute
   '/icp/agency-partner': typeof IcpAgencyPartnerRoute
   '/icp/saas-b2b-reseller': typeof IcpSaasB2bResellerRoute
+  '/vs/aeroleads': typeof VsAeroleadsRoute
+  '/vs/anymail-finder': typeof VsAnymailFinderRoute
+  '/vs/contactout': typeof VsContactoutRoute
+  '/vs/fullenrich': typeof VsFullenrichRoute
+  '/vs/hunter': typeof VsHunterRoute
+  '/vs/kaspr': typeof VsKasprRoute
+  '/vs/leadiq': typeof VsLeadiqRoute
+  '/vs/lusha': typeof VsLushaRoute
+  '/vs/prospeo': typeof VsProspeoRoute
+  '/vs/rocketreach': typeof VsRocketreachRoute
+  '/vs/seamless': typeof VsSeamlessRoute
+  '/vs/snov': typeof VsSnovRoute
+  '/vs/wiza': typeof VsWizaRoute
+  '/vs/zoominfo': typeof VsZoominfoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -170,6 +282,20 @@ export interface FileRoutesById {
   '/customers/outreach-ace': typeof CustomersOutreachAceRoute
   '/icp/agency-partner': typeof IcpAgencyPartnerRoute
   '/icp/saas-b2b-reseller': typeof IcpSaasB2bResellerRoute
+  '/vs/aeroleads': typeof VsAeroleadsRoute
+  '/vs/anymail-finder': typeof VsAnymailFinderRoute
+  '/vs/contactout': typeof VsContactoutRoute
+  '/vs/fullenrich': typeof VsFullenrichRoute
+  '/vs/hunter': typeof VsHunterRoute
+  '/vs/kaspr': typeof VsKasprRoute
+  '/vs/leadiq': typeof VsLeadiqRoute
+  '/vs/lusha': typeof VsLushaRoute
+  '/vs/prospeo': typeof VsProspeoRoute
+  '/vs/rocketreach': typeof VsRocketreachRoute
+  '/vs/seamless': typeof VsSeamlessRoute
+  '/vs/snov': typeof VsSnovRoute
+  '/vs/wiza': typeof VsWizaRoute
+  '/vs/zoominfo': typeof VsZoominfoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -191,6 +317,20 @@ export interface FileRouteTypes {
     | '/customers/outreach-ace'
     | '/icp/agency-partner'
     | '/icp/saas-b2b-reseller'
+    | '/vs/aeroleads'
+    | '/vs/anymail-finder'
+    | '/vs/contactout'
+    | '/vs/fullenrich'
+    | '/vs/hunter'
+    | '/vs/kaspr'
+    | '/vs/leadiq'
+    | '/vs/lusha'
+    | '/vs/prospeo'
+    | '/vs/rocketreach'
+    | '/vs/seamless'
+    | '/vs/snov'
+    | '/vs/wiza'
+    | '/vs/zoominfo'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -210,6 +350,20 @@ export interface FileRouteTypes {
     | '/customers/outreach-ace'
     | '/icp/agency-partner'
     | '/icp/saas-b2b-reseller'
+    | '/vs/aeroleads'
+    | '/vs/anymail-finder'
+    | '/vs/contactout'
+    | '/vs/fullenrich'
+    | '/vs/hunter'
+    | '/vs/kaspr'
+    | '/vs/leadiq'
+    | '/vs/lusha'
+    | '/vs/prospeo'
+    | '/vs/rocketreach'
+    | '/vs/seamless'
+    | '/vs/snov'
+    | '/vs/wiza'
+    | '/vs/zoominfo'
   id:
     | '__root__'
     | '/'
@@ -229,6 +383,20 @@ export interface FileRouteTypes {
     | '/customers/outreach-ace'
     | '/icp/agency-partner'
     | '/icp/saas-b2b-reseller'
+    | '/vs/aeroleads'
+    | '/vs/anymail-finder'
+    | '/vs/contactout'
+    | '/vs/fullenrich'
+    | '/vs/hunter'
+    | '/vs/kaspr'
+    | '/vs/leadiq'
+    | '/vs/lusha'
+    | '/vs/prospeo'
+    | '/vs/rocketreach'
+    | '/vs/seamless'
+    | '/vs/snov'
+    | '/vs/wiza'
+    | '/vs/zoominfo'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -246,6 +414,20 @@ export interface RootRouteChildren {
   SalesMarketingRoute: typeof SalesMarketingRoute
   IcpAgencyPartnerRoute: typeof IcpAgencyPartnerRoute
   IcpSaasB2bResellerRoute: typeof IcpSaasB2bResellerRoute
+  VsAeroleadsRoute: typeof VsAeroleadsRoute
+  VsAnymailFinderRoute: typeof VsAnymailFinderRoute
+  VsContactoutRoute: typeof VsContactoutRoute
+  VsFullenrichRoute: typeof VsFullenrichRoute
+  VsHunterRoute: typeof VsHunterRoute
+  VsKasprRoute: typeof VsKasprRoute
+  VsLeadiqRoute: typeof VsLeadiqRoute
+  VsLushaRoute: typeof VsLushaRoute
+  VsProspeoRoute: typeof VsProspeoRoute
+  VsRocketreachRoute: typeof VsRocketreachRoute
+  VsSeamlessRoute: typeof VsSeamlessRoute
+  VsSnovRoute: typeof VsSnovRoute
+  VsWizaRoute: typeof VsWizaRoute
+  VsZoominfoRoute: typeof VsZoominfoRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -369,6 +551,104 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IcpSaasB2bResellerRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/vs/aeroleads': {
+      id: '/vs/aeroleads'
+      path: '/vs/aeroleads'
+      fullPath: '/vs/aeroleads'
+      preLoaderRoute: typeof VsAeroleadsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/anymail-finder': {
+      id: '/vs/anymail-finder'
+      path: '/vs/anymail-finder'
+      fullPath: '/vs/anymail-finder'
+      preLoaderRoute: typeof VsAnymailFinderRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/contactout': {
+      id: '/vs/contactout'
+      path: '/vs/contactout'
+      fullPath: '/vs/contactout'
+      preLoaderRoute: typeof VsContactoutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/fullenrich': {
+      id: '/vs/fullenrich'
+      path: '/vs/fullenrich'
+      fullPath: '/vs/fullenrich'
+      preLoaderRoute: typeof VsFullenrichRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/hunter': {
+      id: '/vs/hunter'
+      path: '/vs/hunter'
+      fullPath: '/vs/hunter'
+      preLoaderRoute: typeof VsHunterRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/kaspr': {
+      id: '/vs/kaspr'
+      path: '/vs/kaspr'
+      fullPath: '/vs/kaspr'
+      preLoaderRoute: typeof VsKasprRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/leadiq': {
+      id: '/vs/leadiq'
+      path: '/vs/leadiq'
+      fullPath: '/vs/leadiq'
+      preLoaderRoute: typeof VsLeadiqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/lusha': {
+      id: '/vs/lusha'
+      path: '/vs/lusha'
+      fullPath: '/vs/lusha'
+      preLoaderRoute: typeof VsLushaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/prospeo': {
+      id: '/vs/prospeo'
+      path: '/vs/prospeo'
+      fullPath: '/vs/prospeo'
+      preLoaderRoute: typeof VsProspeoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/rocketreach': {
+      id: '/vs/rocketreach'
+      path: '/vs/rocketreach'
+      fullPath: '/vs/rocketreach'
+      preLoaderRoute: typeof VsRocketreachRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/seamless': {
+      id: '/vs/seamless'
+      path: '/vs/seamless'
+      fullPath: '/vs/seamless'
+      preLoaderRoute: typeof VsSeamlessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/snov': {
+      id: '/vs/snov'
+      path: '/vs/snov'
+      fullPath: '/vs/snov'
+      preLoaderRoute: typeof VsSnovRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/wiza': {
+      id: '/vs/wiza'
+      path: '/vs/wiza'
+      fullPath: '/vs/wiza'
+      preLoaderRoute: typeof VsWizaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/vs/zoominfo': {
+      id: '/vs/zoominfo'
+      path: '/vs/zoominfo'
+      fullPath: '/vs/zoominfo'
+      preLoaderRoute: typeof VsZoominfoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -403,6 +683,20 @@ const rootRouteChildren: RootRouteChildren = {
   SalesMarketingRoute: SalesMarketingRoute,
   IcpAgencyPartnerRoute: IcpAgencyPartnerRoute,
   IcpSaasB2bResellerRoute: IcpSaasB2bResellerRoute,
+  VsAeroleadsRoute: VsAeroleadsRoute,
+  VsAnymailFinderRoute: VsAnymailFinderRoute,
+  VsContactoutRoute: VsContactoutRoute,
+  VsFullenrichRoute: VsFullenrichRoute,
+  VsHunterRoute: VsHunterRoute,
+  VsKasprRoute: VsKasprRoute,
+  VsLeadiqRoute: VsLeadiqRoute,
+  VsLushaRoute: VsLushaRoute,
+  VsProspeoRoute: VsProspeoRoute,
+  VsRocketreachRoute: VsRocketreachRoute,
+  VsSeamlessRoute: VsSeamlessRoute,
+  VsSnovRoute: VsSnovRoute,
+  VsWizaRoute: VsWizaRoute,
+  VsZoominfoRoute: VsZoominfoRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
