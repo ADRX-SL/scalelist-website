@@ -35,8 +35,11 @@ jobs:
         run: node scripts/publish-to-wordpress.mjs
 
       # Page IDs change on first publish — commit them back so future runs update.
+      # Best-effort: main is protected, so this may be rejected. That is safe —
+      # the publisher adopts pages by slug when an ID is missing.
       - name: Commit page IDs
         if: github.ref == 'refs/heads/main'
+        continue-on-error: true
         run: |
           if ! git diff --quiet content/.page-ids.json; then
             git config user.name "github-actions[bot]"

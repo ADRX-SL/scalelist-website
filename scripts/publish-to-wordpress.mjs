@@ -106,11 +106,28 @@ for (const file of files) {
   }
 
   const payload = { title: meta.title, slug, status, content: mdToHtml(body.trim()) };
-  const existingId = ids[slug];
+  let existingId = ids[slug];
 
   if (DRY) {
-    console.log(`• ${slug.padEnd(30)} ${existingId ? "UPDATE id=" + existingId : "CREATE"}  status=${status}  html=${payload.content.length}b  title="${meta.title}"`);
+    console.log(`• ${slug.padEnd(30)} ${existingId ? "UPDATE id=" + existingId : "CREATE (or adopt by slug)"}  status=${status}  html=${payload.content.length}b  title="${meta.title}"`);
     continue;
+  }
+
+  // If we have no recorded ID, ask WordPress whether a page with this slug already
+  // exists and adopt it. Without this, a failed write-back of .page-ids.json would
+  // make the next run create a duplicate page instead of updating.
+  if (!existingId) {
+    const lookup = await fetch(
+      `${WP_URL.replace(/\/$/, "")}/wp-json/wp/v2/pages?slug=${encodeURIComponent(slug)}&status=any&per_page=1`,
+      { headers: { Authorization: auth } },
+    );
+    if (lookup.ok) {
+      const found = await lookup.json();
+      if (Array.isArray(found) && found.length) {
+        existingId = found[0].id;
+        console.log(`  ↳ adopted existing page id=${existingId} for slug '${slug}'`);
+      }
+    }
   }
 
   const url = existingId

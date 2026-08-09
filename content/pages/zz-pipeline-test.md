@@ -19,3 +19,8 @@ updates this page automatically.
 
 Pages published this way render through the theme, not Elementor. Existing
 Elementor pages are untouched by this pipeline.
+
+### Live pipeline run
+
+This paragraph was added in a pull request and published to WordPress by GitHub
+Actions on merge — no developer, no manual step, no copy-paste.

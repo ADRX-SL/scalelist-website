@@ -11,11 +11,15 @@ name: Deploy to Cloudflare
 # Deploying the Worker does NOT put anything on scalelist.com. Traffic only moves
 # when a Workers route is added for a specific path — a separate, deliberate step.
 
+# Manual-only until a CLOUDFLARE_API_TOKEN secret exists. Once it does,
+# uncomment the push/pull_request triggers below to get deploy-on-merge
+# and per-PR preview URLs.
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  workflow_dispatch:
+  # push:
+  #   branches: [main]
+  # pull_request:
+  #   branches: [main]
 
 jobs:
   deploy:
