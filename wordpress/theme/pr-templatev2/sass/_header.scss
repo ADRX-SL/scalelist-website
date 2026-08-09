@@ -1,0 +1,60 @@
+/*
+The header.scss file serves as the stylesheet for the header section of a website or web application. 
+It contains styles and formatting instructions specifically tailored for elements within the header, 
+such as navigation menus, logos, and other header components.
+*/
+
+@import "mixin";
+
+.main-header {
+    &.she-header {
+        box-shadow: $box-shadow;
+    }
+    .main-header-inner {
+        .elementor-nav-menu--main {
+            .elementor-nav-menu {
+                li {
+                    &:last-child {
+                        a {
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.header-logo {
+    @media screen and (max-width: 767px){
+        .elementor-icon-box-wrapper {
+            margin-top: 7px;
+        }
+    }
+}
+
+.single-post {
+    .main-header {
+        &.she-header {
+            .elementor-icon-box-wrapper {
+                svg {
+                    g {
+                        fill: $primary-color !important;
+                    }
+                }
+                .elementor-icon-box-title {
+                    a {
+                        color: $brand-black !important;
+                    }
+                }
+            }
+            .elementor-widget-nav-menu {
+                .elementor-nav-menu {
+                    li a {
+                        color: $brand-black !important;
+                    }
+                }   
+            }
+        }
+    }
+}
+

@@ -1,0 +1,203 @@
+/*
+The elements.scss file is dedicated to styling custom UI elements and components such as accordions, 
+carousels, testimonials, or any other unique interactive features on a website or web application. 
+This file contains SASS rules and styles specifically tailored for these elements, ensuring they are visually appealing, 
+functional, and consistent with the overall design theme.
+*/
+@import "mixin";
+
+.testimonial-panels {
+    background: $white;
+    padding: 25px;
+    box-shadow: $box-shadow;
+    border-radius: 7px;
+    .testimonial-name {
+        margin-bottom: 8px !important;
+    }
+    img {
+        border-radius: 50% !important;
+    }
+    &.elementor-element-ed7c58d {
+        padding-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    &.elementor-element-84ba99b {
+        @media screen and (max-width: 767px){
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+}
+
+.center-last {
+    .elementor-loop-container  {
+        max-width: 460px;
+        margin: 0 auto;
+        display: flex;
+        @media screen and (max-width: 768px){
+            max-width: 350px;
+        }
+        @media screen and (max-width: 767px){
+            max-width: 100%;
+        }
+    }
+}
+
+/* ACCORDION */
+.custom-accordion {
+    .elementor-accordion-item {
+        border-left: 0 !important;
+        border-right: 0 !important;
+        padding: 7px 0 !important;
+        .elementor-tab-title,
+        .elementor-tab-content {
+            padding-left: 0;
+            padding-right: 0;
+            border: 0;
+        }
+        .elementor-tab-title {
+            &.elementor-active {
+                padding-bottom: 0;
+            }
+        }
+        .elementor-tab-content {
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }   
+}
+
+/* ACCORDION */
+
+/* PRICING TABLE */
+.pricing-tables {
+    .elementor-tabs {
+        .elementor-tabs-wrapper {
+            position: relative;
+            overflow: unset;
+            &::before {
+                content: "";
+                border: 1px solid  #e5e7eb;
+                position: absolute;
+                border-radius: 8px;
+                width: 25%;
+                height: 100%;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                @media screen and (max-width: 1024px){
+                    display: none;
+                }
+                @media screen and (max-width: 600px){
+                    display: block;
+                    width: 100%;
+                }
+                @media screen and (max-width: 1920px) and (min-width: 1367px){
+                    width: 24%;
+                }
+            }
+            @media screen and (max-width: 767px){
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        .elementor-tab-title {
+            @media screen and (max-width: 767px){
+                &.elementor-tab-mobile-title {
+                    display: none;
+                }
+            }
+            @media screen and (max-width: 600px){
+                width: 100%;
+                text-align: center;
+                margin: 5px;
+            }
+            padding: 12px 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            &.elementor-active {
+                background: $primary-color;
+                color: $white !important;
+                border-radius: 8px;
+                position: relative;
+                &:hover {
+                    background: #1F67D3;
+                }
+            }
+            &:hover {
+                background: $brand-grey;
+                border-radius: 8px;
+            }
+            &:first-child {
+                margin-right: 10px;
+            }
+            &:last-child {
+                &::before {
+                    content: "Save 30%";
+                    background: $secondary-color;
+                    font-weight: 700;
+                    font-size: 12px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    color: #000;
+                    position: absolute;
+                    left: 0;
+                    right: 0 !important;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 46% !important;
+                    top: -15px;
+                    height: auto !important;
+                    bottom: auto !important;
+                }
+            }
+        }
+        .elementor-tab-content {
+            @media screen and (max-width: 1024px){
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+/* FAQS Accordion */
+.faqs-accordion {
+    .elementor-accordion {
+        .elementor-accordion-item {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            .elementor-tab-title {
+                border-radius: 8px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                &.elementor-active {
+                    background-color: $primary-color;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                    a {
+                        color: $white;
+                    }
+                }
+            }
+            .elementor-tab-content {
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+                &.elementor-active {
+                    background-color: $primary-color;
+                    p {
+                        color: $white;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

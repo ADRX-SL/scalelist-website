@@ -1,0 +1,14 @@
+/*
+The footer.scss file is dedicated to styling the footer section of a website or web application. 
+It contains CSS rules and styles specifically tailored for elements within the footer, such as copyright notices, 
+social media icons, contact information, or any other content placed in the footer area.
+*/
+
+@import "mixin";
+
+.page-id-616,
+.page-id-586{
+    .ideal-footer {
+        display: none;
+    }
+}
