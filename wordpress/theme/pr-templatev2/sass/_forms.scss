@@ -1,0 +1,29 @@
+/*
+The forms.scss file is dedicated to styling HTML forms in a website or web application. 
+It contains CSS rules and styles specifically designed for form elements such as input fields, 
+checkboxes, radio buttons, dropdowns, and buttons. The purpose is to enhance user experience by 
+making forms visually appealing, intuitive, and easy to interact with. 
+*/
+@import "mixin";
+
+.custom-form {
+    form {
+        .gfield {
+            input {
+                &:active,
+                &:focus {
+                    outline: 0;
+                }
+                border: 1px solid #64748B;
+                border-radius: 5px;
+                background: #F3F4F6;
+                padding: 12px !important;
+            }
+        }
+        input[type="submit"] {
+            margin: 0 auto;
+            padding: 10px 50px;
+        }
+    }
+}
+

@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as CustomersRouteImport } from './routes/customers'
 import { Route as DuplicateRouteImport } from './routes/duplicate'
 import { Route as EmailVerifierRouteImport } from './routes/email-verifier'
+import { Route as ExtensionRouteImport } from './routes/extension'
 import { Route as FreeEmailFinderRouteImport } from './routes/free-email-finder'
 import { Route as IntegrationsRouteImport } from './routes/integrations'
 import { Route as LeadMobileFinderRouteImport } from './routes/lead-mobile-finder'
@@ -44,6 +45,11 @@ const DuplicateRoute = DuplicateRouteImport.update({
 const EmailVerifierRoute = EmailVerifierRouteImport.update({
   id: '/email-verifier',
   path: '/email-verifier',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExtensionRoute = ExtensionRouteImport.update({
+  id: '/extension',
+  path: '/extension',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FreeEmailFinderRoute = FreeEmailFinderRouteImport.update({
@@ -112,6 +118,7 @@ export interface FileRoutesByFullPath {
   '/customers': typeof CustomersRouteWithChildren
   '/duplicate': typeof DuplicateRoute
   '/email-verifier': typeof EmailVerifierRoute
+  '/extension': typeof ExtensionRoute
   '/free-email-finder': typeof FreeEmailFinderRoute
   '/integrations': typeof IntegrationsRoute
   '/lead-mobile-finder': typeof LeadMobileFinderRoute
@@ -130,6 +137,7 @@ export interface FileRoutesByTo {
   '/customers': typeof CustomersRouteWithChildren
   '/duplicate': typeof DuplicateRoute
   '/email-verifier': typeof EmailVerifierRoute
+  '/extension': typeof ExtensionRoute
   '/free-email-finder': typeof FreeEmailFinderRoute
   '/integrations': typeof IntegrationsRoute
   '/lead-mobile-finder': typeof LeadMobileFinderRoute
@@ -149,6 +157,7 @@ export interface FileRoutesById {
   '/customers': typeof CustomersRouteWithChildren
   '/duplicate': typeof DuplicateRoute
   '/email-verifier': typeof EmailVerifierRoute
+  '/extension': typeof ExtensionRoute
   '/free-email-finder': typeof FreeEmailFinderRoute
   '/integrations': typeof IntegrationsRoute
   '/lead-mobile-finder': typeof LeadMobileFinderRoute
@@ -169,6 +178,7 @@ export interface FileRouteTypes {
     | '/customers'
     | '/duplicate'
     | '/email-verifier'
+    | '/extension'
     | '/free-email-finder'
     | '/integrations'
     | '/lead-mobile-finder'
@@ -187,6 +197,7 @@ export interface FileRouteTypes {
     | '/customers'
     | '/duplicate'
     | '/email-verifier'
+    | '/extension'
     | '/free-email-finder'
     | '/integrations'
     | '/lead-mobile-finder'
@@ -205,6 +216,7 @@ export interface FileRouteTypes {
     | '/customers'
     | '/duplicate'
     | '/email-verifier'
+    | '/extension'
     | '/free-email-finder'
     | '/integrations'
     | '/lead-mobile-finder'
@@ -224,6 +236,7 @@ export interface RootRouteChildren {
   CustomersRoute: typeof CustomersRouteWithChildren
   DuplicateRoute: typeof DuplicateRoute
   EmailVerifierRoute: typeof EmailVerifierRoute
+  ExtensionRoute: typeof ExtensionRoute
   FreeEmailFinderRoute: typeof FreeEmailFinderRoute
   IntegrationsRoute: typeof IntegrationsRoute
   LeadMobileFinderRoute: typeof LeadMobileFinderRoute
@@ -263,6 +276,13 @@ declare module '@tanstack/react-router' {
       path: '/email-verifier'
       fullPath: '/email-verifier'
       preLoaderRoute: typeof EmailVerifierRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/extension': {
+      id: '/extension'
+      path: '/extension'
+      fullPath: '/extension'
+      preLoaderRoute: typeof ExtensionRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/free-email-finder': {
@@ -373,6 +393,7 @@ const rootRouteChildren: RootRouteChildren = {
   CustomersRoute: CustomersRouteWithChildren,
   DuplicateRoute: DuplicateRoute,
   EmailVerifierRoute: EmailVerifierRoute,
+  ExtensionRoute: ExtensionRoute,
   FreeEmailFinderRoute: FreeEmailFinderRoute,
   IntegrationsRoute: IntegrationsRoute,
   LeadMobileFinderRoute: LeadMobileFinderRoute,

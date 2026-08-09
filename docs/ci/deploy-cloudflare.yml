@@ -1,0 +1,80 @@
+name: Deploy to Cloudflare
+
+# INACTIVE until a CLOUDFLARE_API_TOKEN repository secret exists.
+# GitHub → Settings → Secrets and variables → Actions → New repository secret
+#   name:  CLOUDFLARE_API_TOKEN
+#   value: a Cloudflare API token with "Workers Scripts: Edit" on the Scalelist account
+#
+# Merges to main deploy the production Worker.
+# Pull requests deploy a preview Worker and comment the URL on the PR.
+#
+# Deploying the Worker does NOT put anything on scalelist.com. Traffic only moves
+# when a Workers route is added for a specific path — a separate, deliberate step.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository }}
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Guard — no secrets in the bundle
+        run: |
+          if grep -rIEq "pat-eu1-[a-f0-9]{8}|hooks\.slack\.com/services/T[A-Z0-9]" .output/ ; then
+            echo "::error::Credential-shaped string found in build output. Refusing to deploy."
+            exit 1
+          fi
+          echo "No credential patterns found in build output."
+
+      - name: Deploy (production)
+        if: github.ref == 'refs/heads/main'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          workingDirectory: .output/server
+          command: deploy
+
+      - name: Deploy (PR preview)
+        id: preview
+        if: github.event_name == 'pull_request'
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          workingDirectory: .output/server
+          command: versions upload
+
+      - name: Comment preview URL
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Preview build uploaded. Open the version preview URL from the Cloudflare dashboard (Workers → scalelist-website → Versions).'
+            })
+
+> **Not yet active.** This file must live at `.github/workflows/deploy-cloudflare.yml`.
+> It could not be pushed automatically: the CLI token lacks the `workflow` scope.
+> Fix with `gh auth refresh -h github.com -s workflow`, then `git mv docs/ci/deploy-cloudflare.yml .github/workflows/`.
