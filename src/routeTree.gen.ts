@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as DuplicateRouteImport } from './routes/duplicate'
+import { Route as ExtensionRouteImport } from './routes/extension'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,31 +23,40 @@ const DuplicateRoute = DuplicateRouteImport.update({
   path: '/duplicate',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ExtensionRoute = ExtensionRouteImport.update({
+  id: '/extension',
+  path: '/extension',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/duplicate': typeof DuplicateRoute
+  '/extension': typeof ExtensionRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/duplicate': typeof DuplicateRoute
+  '/extension': typeof ExtensionRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/duplicate': typeof DuplicateRoute
+  '/extension': typeof ExtensionRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/duplicate'
+  fullPaths: '/' | '/duplicate' | '/extension'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/duplicate'
-  id: '__root__' | '/' | '/duplicate'
+  to: '/' | '/duplicate' | '/extension'
+  id: '__root__' | '/' | '/duplicate' | '/extension'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DuplicateRoute: typeof DuplicateRoute
+  ExtensionRoute: typeof ExtensionRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -65,12 +75,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DuplicateRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/extension': {
+      id: '/extension'
+      path: '/extension'
+      fullPath: '/extension'
+      preLoaderRoute: typeof ExtensionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DuplicateRoute: DuplicateRoute,
+  ExtensionRoute: ExtensionRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

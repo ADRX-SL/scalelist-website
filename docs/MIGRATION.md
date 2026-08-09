@@ -19,7 +19,7 @@ Status legend: ✅ ported · 🔜 to port · 🗄️ archive (do not port) · �
 | 022026-scalelist-email-finder-page | `/free-email-finder` | `/free-email-finder/` | 🔜 |
 | 022026-scalelist-email-verifier-page | `/email-verifier` | `/email-verifier/` | 🔜 |
 | 022026-scalelist-mobile-number-finder-page | `/lead-mobile-finder` | `/lead-mobile-finder/` | 🔜 |
-| 022026-Scalelist-Chrome-extension-page | `/extension` | `/extension/` | 🔜 |
+| 022026-Scalelist-Chrome-extension-page | `/extension` | `/extension/` | ✅ |
 | 022026-scalelist-integration-page | `/integrations` | (nav) | 🔜 |
 | scalelist-mcp-server | `/mcp-server` | `/mcp-server/` | 🔜 |
 | Scalelist---Lead-Monitoring | `/monitoring` | `/monitoring/` | 🔜 |
