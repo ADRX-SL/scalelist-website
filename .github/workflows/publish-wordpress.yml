@@ -6,11 +6,12 @@ name: Publish content to WordPress
 #   WP_APP_PASS   that user's Application Password (wp-admin > Users > Profile)
 
 on:
+  workflow_dispatch:          # allow a manual run from the Actions tab
   push:
     branches: [main]
-    paths: ["content/**"]
+    paths: ["content/**", "scripts/publish-to-wordpress.mjs", ".github/workflows/publish-wordpress.yml"]
   pull_request:
-    paths: ["content/**"]
+    paths: ["content/**", "scripts/publish-to-wordpress.mjs", ".github/workflows/publish-wordpress.yml"]
 
 jobs:
   publish:
