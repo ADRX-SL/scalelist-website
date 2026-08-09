@@ -1,17 +1,29 @@
 name: Publish content to WordPress
 
-# Requires three repository secrets:
-#   WP_URL        https://scalelist.com
-#   WP_USER       a WordPress user with page-editing rights
-#   WP_APP_PASS   that user's Application Password (wp-admin > Users > Profile)
+# Publishes content/pages/*.md to WordPress on merge to main.
+#
+# Transport is SSH + WP-CLI, not the REST API: SiteGround's Anti-Bot AI serves an
+# sgcaptcha challenge to datacenter IPs, so REST publishing fails from CI runners.
+# (Verified twice, from two different GitHub runner IPs.)
+#
+# Required repository secret:
+#   SSH_PRIVATE_KEY   the private half of the key installed in SiteGround Site Tools
+#
+# Non-secret connection details are set below.
 
 on:
-  workflow_dispatch:          # allow a manual run from the Actions tab
+  workflow_dispatch:
   push:
     branches: [main]
-    paths: ["content/**", "scripts/publish-to-wordpress.mjs", ".github/workflows/publish-wordpress.yml"]
+    paths: ["content/**", "scripts/**", ".github/workflows/publish-wordpress.yml"]
   pull_request:
-    paths: ["content/**", "scripts/publish-to-wordpress.mjs", ".github/workflows/publish-wordpress.yml"]
+    paths: ["content/**", "scripts/**", ".github/workflows/publish-wordpress.yml"]
+
+env:
+  SSH_HOST: c1131935.sgvps.net
+  SSH_USER: u2-brdthq677x9b
+  SSH_PORT: "18765"
+  WP_PATH: ~/www/scalelist.com/public_html
 
 jobs:
   publish:
@@ -21,31 +33,31 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
 
-      # On a PR: validate only. Never writes to WordPress.
-      - name: Validate content (dry run)
+      # On a PR: validate the content files only. No credentials, no network, no writes.
+      - name: Validate content (dry run, offline)
         if: github.event_name == 'pull_request'
-        run: node scripts/publish-to-wordpress.mjs --dry-run
+        run: |
+          for f in content/pages/*.md; do
+            node scripts/md-to-html.mjs "$f" > /dev/null
+            grep -q '^title:'  "$f" || { echo "::error file=$f::missing 'title'"; exit 1; }
+            grep -q '^slug:'   "$f" || { echo "::error file=$f::missing 'slug'"; exit 1; }
+            s=$(sed -n 's/^status:[[:space:]]*//p' "$f" | head -1)
+            case "${s:-draft}" in draft|publish) ;; *) echo "::error file=$f::status must be draft|publish"; exit 1;; esac
+            echo "ok: $f"
+          done
 
-      # On merge to main: create/update the pages.
+      - name: Install SSH key
+        if: github.ref == 'refs/heads/main'
+        run: |
+          mkdir -p ~/.ssh && printf '%s\n' "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+
       - name: Publish to WordPress
         if: github.ref == 'refs/heads/main'
         env:
-          WP_URL: ${{ secrets.WP_URL }}
-          WP_USER: ${{ secrets.WP_USER }}
-          WP_APP_PASS: ${{ secrets.WP_APP_PASS }}
-        run: node scripts/publish-to-wordpress.mjs
+          SSH_KEY: /home/runner/.ssh/deploy_key
+        run: bash scripts/publish-via-ssh.sh
 
-      # Page IDs change on first publish — commit them back so future runs update.
-      # Best-effort: main is protected, so this may be rejected. That is safe —
-      # the publisher adopts pages by slug when an ID is missing.
-      - name: Commit page IDs
-        if: github.ref == 'refs/heads/main'
-        continue-on-error: true
-        run: |
-          if ! git diff --quiet content/.page-ids.json; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add content/.page-ids.json
-            git commit -m "chore: record WordPress page IDs [skip ci]"
-            git push
-          fi
+      - name: Remove key
+        if: always()
+        run: rm -f ~/.ssh/deploy_key

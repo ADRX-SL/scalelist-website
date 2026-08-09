@@ -23,5 +23,5 @@ Elementor pages are untouched by this pipeline.
 ### Live pipeline run
 
 This paragraph was added in a pull request and published to WordPress by GitHub
-Actions on merge — no developer, no manual step, no copy-paste. Run 2 confirms
-the User-Agent fix cleared SiteGround's bot challenge.
+Actions on merge — no developer, no manual step, no copy-paste. Published over SSH + WP-CLI,
+because SiteGround's Anti-Bot AI blocks REST calls from CI runners.
