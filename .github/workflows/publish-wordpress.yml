@@ -1,9 +1,5 @@
 name: Publish content to WordPress
 
-# Move to .github/workflows/publish-wordpress.yml to activate.
-# (Blocked today: the CLI token lacks the `workflow` scope —
-#  run `gh auth refresh -h github.com -s workflow` to grant it.)
-#
 # Requires three repository secrets:
 #   WP_URL        https://scalelist.com
 #   WP_USER       a WordPress user with page-editing rights
