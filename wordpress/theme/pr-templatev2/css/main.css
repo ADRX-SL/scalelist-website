@@ -1,0 +1,718 @@
+/*
+ * Sarwar
+The main.scss file serves as the primary stylesheet for your website or web application. 
+It acts as the central hub where you can import and organize various stylesheets, including those for different pages
+and posts. This file helps maintain consistency in design, while also allowing customization for specific pages or posts.
+*/
+/*
+The fonts.scss file serves the purpose of defining and managing font styles for a website or web application. 
+It centralizes the configuration of fonts, making it easier to maintain a consistent typographic 
+design across the project.
+*/
+/*
+The header.scss file serves as the stylesheet for the header section of a website or web application. 
+It contains styles and formatting instructions specifically tailored for elements within the header, 
+such as navigation menus, logos, and other header components.
+*/
+/*
+The mixins.scss file is used to define reusable pieces of CSS code known as mixins. 
+Mixins are essentially groups of CSS declarations that can be reused in multiple places, providing a convenient way 
+to encapsulate styles and promote code modularity. This file helps in maintaining consistent styles and simplifying 
+the process of updating or modifying common patterns or components across a project.
+*/
+.main-header.she-header {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
+}
+.main-header .main-header-inner .elementor-nav-menu--main .elementor-nav-menu li:last-child a {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .header-logo .elementor-icon-box-wrapper {
+    margin-top: 7px;
+  }
+}
+
+.single-post .main-header.she-header .elementor-icon-box-wrapper svg g {
+  fill: #2474EF !important;
+}
+.single-post .main-header.she-header .elementor-icon-box-wrapper .elementor-icon-box-title a {
+  color: #000 !important;
+}
+.single-post .main-header.she-header .elementor-widget-nav-menu .elementor-nav-menu li a {
+  color: #000 !important;
+}
+
+/*
+The footer.scss file is dedicated to styling the footer section of a website or web application. 
+It contains CSS rules and styles specifically tailored for elements within the footer, such as copyright notices, 
+social media icons, contact information, or any other content placed in the footer area.
+*/
+/*
+The mixins.scss file is used to define reusable pieces of CSS code known as mixins. 
+Mixins are essentially groups of CSS declarations that can be reused in multiple places, providing a convenient way 
+to encapsulate styles and promote code modularity. This file helps in maintaining consistent styles and simplifying 
+the process of updating or modifying common patterns or components across a project.
+*/
+.page-id-616 .ideal-footer,
+.page-id-586 .ideal-footer {
+  display: none;
+}
+
+/*
+The mixins.scss file is used to define reusable pieces of CSS code known as mixins. 
+Mixins are essentially groups of CSS declarations that can be reused in multiple places, providing a convenient way 
+to encapsulate styles and promote code modularity. This file helps in maintaining consistent styles and simplifying 
+the process of updating or modifying common patterns or components across a project.
+*/
+/* 
+The sidebar.scss file is used to style the sidebar section of a website or web application. It contains SASS rules and 
+styles specifically tailored for elements within the sidebar, such as navigation menus, widgets, user profiles, 
+or any other content placed in the sidebar area.
+*/
+/*
+The mixins.scss file is used to define reusable pieces of CSS code known as mixins. 
+Mixins are essentially groups of CSS declarations that can be reused in multiple places, providing a convenient way 
+to encapsulate styles and promote code modularity. This file helps in maintaining consistent styles and simplifying 
+the process of updating or modifying common patterns or components across a project.
+*/
+/*
+The elements.scss file is dedicated to styling custom UI elements and components such as accordions, 
+carousels, testimonials, or any other unique interactive features on a website or web application. 
+This file contains SASS rules and styles specifically tailored for these elements, ensuring they are visually appealing, 
+functional, and consistent with the overall design theme.
+*/
+/*
+The mixins.scss file is used to define reusable pieces of CSS code known as mixins. 
+Mixins are essentially groups of CSS declarations that can be reused in multiple places, providing a convenient way 
+to encapsulate styles and promote code modularity. This file helps in maintaining consistent styles and simplifying 
+the process of updating or modifying common patterns or components across a project.
+*/
+.testimonial-panels {
+  background: #fff;
+  padding: 25px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
+  border-radius: 7px;
+}
+.testimonial-panels .testimonial-name {
+  margin-bottom: 8px !important;
+}
+.testimonial-panels img {
+  border-radius: 50% !important;
+}
+.testimonial-panels.elementor-element-ed7c58d {
+  padding-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+@media screen and (max-width: 767px) {
+  .testimonial-panels.elementor-element-84ba99b {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.center-last .elementor-loop-container {
+  max-width: 460px;
+  margin: 0 auto;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .center-last .elementor-loop-container {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .center-last .elementor-loop-container {
+    max-width: 100%;
+  }
+}
+
+/* ACCORDION */
+.custom-accordion .elementor-accordion-item {
+  border-left: 0 !important;
+  border-right: 0 !important;
+  padding: 7px 0 !important;
+}
+.custom-accordion .elementor-accordion-item .elementor-tab-title,
+.custom-accordion .elementor-accordion-item .elementor-tab-content {
+  padding-left: 0;
+  padding-right: 0;
+  border: 0;
+}
+.custom-accordion .elementor-accordion-item .elementor-tab-title.elementor-active {
+  padding-bottom: 0;
+}
+.custom-accordion .elementor-accordion-item .elementor-tab-content p {
+  margin-bottom: 0;
+}
+
+/* ACCORDION */
+/* PRICING TABLE */
+.pricing-tables .elementor-tabs .elementor-tabs-wrapper {
+  position: relative;
+  overflow: unset;
+}
+.pricing-tables .elementor-tabs .elementor-tabs-wrapper::before {
+  content: "";
+  border: 1px solid #e5e7eb;
+  position: absolute;
+  border-radius: 8px;
+  width: 25%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1024px) {
+  .pricing-tables .elementor-tabs .elementor-tabs-wrapper::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pricing-tables .elementor-tabs .elementor-tabs-wrapper::before {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1920px) and (min-width: 1367px) {
+  .pricing-tables .elementor-tabs .elementor-tabs-wrapper::before {
+    width: 24%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .pricing-tables .elementor-tabs .elementor-tabs-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.pricing-tables .elementor-tabs .elementor-tab-title {
+  padding: 12px 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 767px) {
+  .pricing-tables .elementor-tabs .elementor-tab-title.elementor-tab-mobile-title {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .pricing-tables .elementor-tabs .elementor-tab-title {
+    width: 100%;
+    text-align: center;
+    margin: 5px;
+  }
+}
+.pricing-tables .elementor-tabs .elementor-tab-title.elementor-active {
+  background: #2474EF;
+  color: #fff !important;
+  border-radius: 8px;
+  position: relative;
+}
+.pricing-tables .elementor-tabs .elementor-tab-title.elementor-active:hover {
+  background: #1F67D3;
+}
+.pricing-tables .elementor-tabs .elementor-tab-title:hover {
+  background: #F1F5F9;
+  border-radius: 8px;
+}
+.pricing-tables .elementor-tabs .elementor-tab-title:first-child {
+  margin-right: 10px;
+}
+.pricing-tables .elementor-tabs .elementor-tab-title:last-child::before {
+  content: "Save 30%";
+  background: #FCD34D;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #000;
+  position: absolute;
+  left: 0;
+  right: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+  width: 46% !important;
+  top: -15px;
+  height: auto !important;
+  bottom: auto !important;
+}
+@media screen and (max-width: 1024px) {
+  .pricing-tables .elementor-tabs .elementor-tab-content {
+    padding: 0 !important;
+  }
+}
+
+/* FAQS Accordion */
+.faqs-accordion .elementor-accordion .elementor-accordion-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+.faqs-accordion .elementor-accordion .elementor-accordion-item .elementor-tab-title {
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.faqs-accordion .elementor-accordion .elementor-accordion-item .elementor-tab-title.elementor-active {
+  background-color: #2474EF;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.faqs-accordion .elementor-accordion .elementor-accordion-item .elementor-tab-title.elementor-active a {
+  color: #fff;
+}
+.faqs-accordion .elementor-accordion .elementor-accordion-item .elementor-tab-content {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.faqs-accordion .elementor-accordion .elementor-accordion-item .elementor-tab-content.elementor-active {
+  background-color: #2474EF;
+}
+.faqs-accordion .elementor-accordion .elementor-accordion-item .elementor-tab-content.elementor-active p {
+  color: #fff;
+}
+.faqs-accordion .elementor-accordion .elementor-accordion-item .elementor-tab-content.elementor-active p:last-child {
+  margin-bottom: 0;
+}
+
+/*
+The forms.scss file is dedicated to styling HTML forms in a website or web application. 
+It contains CSS rules and styles specifically designed for form elements such as input fields, 
+checkboxes, radio buttons, dropdowns, and buttons. The purpose is to enhance user experience by 
+making forms visually appealing, intuitive, and easy to interact with. 
+*/
+/*
+The mixins.scss file is used to define reusable pieces of CSS code known as mixins. 
+Mixins are essentially groups of CSS declarations that can be reused in multiple places, providing a convenient way 
+to encapsulate styles and promote code modularity. This file helps in maintaining consistent styles and simplifying 
+the process of updating or modifying common patterns or components across a project.
+*/
+.custom-form form .gfield input {
+  border: 1px solid #64748B;
+  border-radius: 5px;
+  background: #F3F4F6;
+  padding: 12px !important;
+}
+.custom-form form .gfield input:active, .custom-form form .gfield input:focus {
+  outline: 0;
+}
+.custom-form form input[type=submit] {
+  margin: 0 auto;
+  padding: 10px 50px;
+}
+
+/*
+The hover-overlay.scss file serves the purpose of creating interactive and visually engaging hover effects 
+for elements on a website or web application. It contains SASS rules and styles specifically designed to be 
+applied when a user hovers over certain elements, enhancing user interactivity.
+*/
+/*
+The mixins.scss file is used to define reusable pieces of CSS code known as mixins. 
+Mixins are essentially groups of CSS declarations that can be reused in multiple places, providing a convenient way 
+to encapsulate styles and promote code modularity. This file helps in maintaining consistent styles and simplifying 
+the process of updating or modifying common patterns or components across a project.
+*/
+/* BANNER */
+.hero-subheading {
+  color: #2474EF;
+}
+
+.hero-subheading p a {
+  color: #000;
+}
+.hero-subheading p a:hover {
+  text-decoration: underline;
+}
+
+.check-text {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .check-text {
+    justify-content: center !important;
+  }
+}
+.check-text .elementor-icon {
+  background: #dcfce7;
+  padding: 2px;
+  border-radius: 6px;
+}
+.check-text .elementor-icon-box-title {
+  margin-bottom: 0;
+}
+
+.rating-banner {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .rating-banner {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .rating-banner {
+    display: block;
+  }
+  .rating-banner .star-container,
+.rating-banner .text-container p {
+    text-align: center;
+  }
+}
+.rating-banner .star-container svg {
+  font-size: 18px;
+}
+.rating-banner .star-container svg path {
+  fill: #22C55E;
+}
+@media screen and (max-width: 767px) {
+  .rating-banner .text-container .mobile-block {
+    display: block;
+  }
+}
+.rating-banner .text-container p {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  color: #64748B;
+  font-size: 15px;
+}
+.rating-banner .text-container p a {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner-hero h1 {
+    font-size: 45px !important;
+  }
+}
+/* BANNER */
+.scalelist-iframe .elementor-widget-container {
+  width: 800px;
+  height: 450px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .scalelist-iframe .elementor-widget-container {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .scalelist-iframe .elementor-widget-container {
+    width: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .scalelist-iframe .elementor-widget-container {
+    height: 350px;
+  }
+}
+
+.install-process .elementor-column .elementor-widget-container {
+  display: flex;
+  align-items: center;
+}
+.install-process .elementor-column .elementor-widget-container::before {
+  content: "1";
+  color: rgb(71, 85, 105);
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid rgb(203, 213, 225);
+  border-radius: 4px;
+  display: block;
+  height: 25px;
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+}
+.install-process .elementor-column:nth-of-type(2) .elementor-widget-container::before {
+  content: "2";
+}
+.install-process .elementor-column:nth-of-type(3) .elementor-widget-container::before {
+  content: "3";
+}
+.install-process .elementor-column:nth-of-type(4) .elementor-widget-container::before {
+  content: "4";
+}
+
+.dots {
+  position: relative;
+}
+.dots:before {
+  content: "";
+  background: #22C55E;
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  bottom: 11px;
+  left: -15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .ratingv2 {
+    display: flex;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reverse-cols .elementor-container {
+    flex-direction: column-reverse;
+  }
+  .ratingv2 {
+    display: block;
+  }
+}
+.change-f {
+  color: #2474EF;
+}
+
+.ratingv2 {
+  justify-content: center;
+}
+.ratingv2 .t2 p {
+  margin-right: 5px;
+}
+.ratingv2 .text-container p, .ratingv2 .text-container a {
+  color: #000;
+}
+
+/* PRICING TABLE */
+.pricing-head .elementor-heading-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.pricing-head .month-badge {
+  color: #64748B;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.pricing-select .elementor-button {
+  width: 100% !important;
+}
+
+.custom-pricing_table .elementor-container {
+  display: flex;
+  align-items: center;
+  margin-left : 0;
+}
+.custom-pricing_table .elementor-column:nth-of-type(2) .elementor-widget-wrap {
+  background: #FCD34D !important;
+}
+.custom-pricing_table .elementor-column:nth-of-type(2) .elementor-widget-wrap .credits p span {
+  color: #000;
+}
+@media screen and (max-width: 1024px) {
+  .custom-pricing_table .elementor-column:nth-child(odd) .elementor-widget-wrap {
+    margin-right: 15px;
+  }
+  .custom-pricing_table .elementor-column:nth-child(even) .elementor-widget-wrap {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .custom-pricing_table .elementor-column:nth-child(odd) .elementor-widget-wrap {
+    margin-right: 0;
+  }
+  .custom-pricing_table .elementor-column:nth-child(even) .elementor-widget-wrap {
+    margin-left: 0;
+  }
+}
+.custom-pricing_table .elementor-column .elementor-widget-wrap {
+  background: #fff;
+  box-shadow: 0px 0px 20px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 6px;
+  margin: 0px 15px;
+  padding: 40px 25px !important;
+}
+@media screen and (max-width: 1024px) {
+  .custom-pricing_table .elementor-column .elementor-widget-wrap {
+    margin: 15px 0;
+  }
+}
+
+.pricing-lists ul li {
+  flex-direction: row-reverse;
+  justify-content: flex-end !important;
+}
+.pricing-lists ul li .elementor-icon-list-text {
+  width: 100%;
+  padding-left: 0 !important;
+}
+.pricing-lists ul li .elementor-icon-list-icon {
+  background: #dcfce7;
+  padding: 2px;
+  border-radius: 6px;
+}
+.pricing-lists ul li .elementor-icon-list-icon svg {
+  margin-right: 0 !important;
+}
+
+.credits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.credits p {
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.credits p span {
+  color: #64748B;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+}
+
+.strike {
+  text-decoration-line: line-through;
+}
+
+.micro-monthly {
+  max-height: 700px;
+}
+@media screen and (max-width: 1024px) {
+  .micro-monthly {
+    max-height: 100%;
+  }
+}
+
+.micro-annual {
+  max-height: 643px;
+
+}
+@media screen and (max-width: 1024px) {
+  .micro-annual {
+    max-height: 100%;
+  }
+}
+
+#openCrisp:hover {
+  cursor: pointer;
+}
+
+/* BLOG Template */
+.post-archive-parent .elementor-posts .elementor-grid-item .elementor-post__read-more {
+  border: 1px solid #2474EF;
+  border-radius: 8px;
+  padding: 8px 20px;
+  display: inline-block;
+}
+.post-archive-parent .elementor-posts .elementor-grid-item .elementor-post__read-more:hover {
+  background: #2474EF;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.post-archive-parent .elementor-pagination .page-numbers {
+  color: #000;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+.post-archive-parent .elementor-pagination .page-numbers.prev {
+  display: none;
+}
+.post-archive-parent .elementor-pagination .page-numbers.next, .post-archive-parent .elementor-pagination .page-numbers.current, .post-archive-parent .elementor-pagination .page-numbers:hover {
+  color: #fff;
+  background: #2474EF;
+  border-radius: 8px;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+}
+
+.single-post .main-header .elementor-icon-box-wrapper svg g {
+  fill: #fff !important;
+}
+.single-post .main-header .elementor-icon-box-wrapper .elementor-icon-box-title a {
+  color: #fff !important;
+}
+.single-post .main-header .elementor-widget-nav-menu .elementor-nav-menu li a {
+  color: #fff !important;
+}
+
+.elementor-toc__body {
+  padding-top: 0 !important;
+}
+
+.blog-content .elementor-widget-container h2, .blog-content .elementor-widget-container h3, .blog-content .elementor-widget-container h4, .blog-content .elementor-widget-container h5, .blog-content .elementor-widget-container h6 {
+  font-family: "Inter", Sans-serif;
+  font-weight: 700;
+/*   margin-top: 40px; */
+margin-top: 25px;
+}
+.blog-content .elementor-widget-container h2:nth-of-type(1), .blog-content .elementor-widget-container h3:nth-of-type(1), .blog-content .elementor-widget-container h4:nth-of-type(1), .blog-content .elementor-widget-container h5:nth-of-type(1), .blog-content .elementor-widget-container h6:nth-of-type(1) {
+  margin-top: 0;
+}
+.blog-content .elementor-widget-container p {
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+}
+.blog-content .elementor-widget-container img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.blog-content .elementor-widget-container ul,
+.blog-content .elementor-widget-container ol {
+  padding-left: 0;
+  margin-left: 17px;
+}
+.blog-content .elementor-widget-container ul li,
+.blog-content .elementor-widget-container ol li {
+  font-family: "Inter", Sans-serif;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.author-panel .elementor-widget-wrap {
+  background: #2474EF;
+  padding: 35px !important;
+  border-radius: 20px;
+}
+.author-panel .elementor-widget-wrap p {
+  margin-bottom: 0;
+}
+
+.scalelist-share .elementor-grid {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .scalelist-share .elementor-grid {
+    display: inline-block !important;
+  }
+}
+.scalelist-share .elementor-grid:before {
+  color: #000;
+  font-family: "Inter", Sans-serif;
+  font-size: 18px;
+  margin-top: -12px;
+  font-weight: 700;
+}
+.scalelist-share .elementor-grid .elementor-grid-item .elementor-share-btn__text span {
+  color: #000;
+}
+.scalelist-share .elementor-grid .elementor-grid-item .elementor-share-btn__icon .fa-facebook:before {
+  content: "\f39e";
+}
+.scalelist-share .elementor-grid .elementor-grid-item .elementor-share-btn__icon .fa-linkedin:before {
+  content: "\f0e1";
+}
+
+#wpdcom,
+#comments {
+  max-width: 865px !important;
+}
+
+#comments {
+  margin-top: 0 !important;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+
+
+

@@ -1,0 +1,51 @@
+name: Publish content to WordPress
+
+# Move to .github/workflows/publish-wordpress.yml to activate.
+# (Blocked today: the CLI token lacks the `workflow` scope —
+#  run `gh auth refresh -h github.com -s workflow` to grant it.)
+#
+# Requires three repository secrets:
+#   WP_URL        https://scalelist.com
+#   WP_USER       a WordPress user with page-editing rights
+#   WP_APP_PASS   that user's Application Password (wp-admin > Users > Profile)
+
+on:
+  push:
+    branches: [main]
+    paths: ["content/**"]
+  pull_request:
+    paths: ["content/**"]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+
+      # On a PR: validate only. Never writes to WordPress.
+      - name: Validate content (dry run)
+        if: github.event_name == 'pull_request'
+        run: node scripts/publish-to-wordpress.mjs --dry-run
+
+      # On merge to main: create/update the pages.
+      - name: Publish to WordPress
+        if: github.ref == 'refs/heads/main'
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASS: ${{ secrets.WP_APP_PASS }}
+        run: node scripts/publish-to-wordpress.mjs
+
+      # Page IDs change on first publish — commit them back so future runs update.
+      - name: Commit page IDs
+        if: github.ref == 'refs/heads/main'
+        run: |
+          if ! git diff --quiet content/.page-ids.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add content/.page-ids.json
+            git commit -m "chore: record WordPress page IDs [skip ci]"
+            git push
+          fi

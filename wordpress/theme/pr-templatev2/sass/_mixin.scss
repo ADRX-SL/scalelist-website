@@ -1,0 +1,116 @@
+/*
+The mixins.scss file is used to define reusable pieces of CSS code known as mixins. 
+Mixins are essentially groups of CSS declarations that can be reused in multiple places, providing a convenient way 
+to encapsulate styles and promote code modularity. This file helps in maintaining consistent styles and simplifying 
+the process of updating or modifying common patterns or components across a project.
+*/
+
+// FONTS VARIABLES
+//$primary-font: "Roboto", sans-serif;
+
+//BRAND COLORS VARIABLES
+$primary-color: #2474EF;
+$secondary-color: #FCD34D;
+$brand-black: #000;
+$brand-green: #dcfce7;
+$brand-dark-green: #22C55E;
+$brand-shade-grey: #64748B;
+$brand-grey: #F1F5F9;
+$white: #fff;
+$box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.09);
+
+$inter: "Inter", Sans-serif;
+$montserrat: "Montserrat", Sans-serif;
+
+// Define your breakpoints
+// Define your breakpoints
+$breakpoints: (
+  small: 0,
+  medium: 768px,
+  large: 1024px,
+  xlarge: 1200px
+);
+
+// Function to get keys of a map
+@function map-keys($map) {
+  $keys: ();
+  @each $key, $value in $map {
+    $keys: append($keys, $key);
+  }
+  @return $keys;
+}
+
+// Function to get the next key in the map
+@function next-key($map, $key) {
+  $keys: map-keys($map);
+  $index: index($keys, $key);
+  $next-index: $index + 1;
+  @if $next-index <= length($keys) {
+    @return nth($keys, $next-index);
+  }
+}
+
+// Mixin to handle media queries
+@mixin breakpoint($breakpoint, $direction: down) {
+  $value: map-get($breakpoints, $breakpoint);
+  
+  @if $direction == only {
+    // Calculate the next breakpoint's value to set the upper limit
+    $next-breakpoint: next-key($breakpoints, $breakpoint);
+    $next-value: map-get($breakpoints, $next-breakpoint);
+    
+    // Create media query with a range between current breakpoint and next breakpoint
+    @media only screen and (min-width: $value) and (max-width: $next-value) {
+      @content;
+    }
+  }
+  @else if $direction == up {
+    @media only screen and (min-width: $value) {
+      @content;
+    }
+  }
+  @else if $direction == down {
+    @media only screen and (max-width: $value) {
+      @content;
+    }
+  }
+}
+  
+//MIXINS
+@mixin button ($background-color, $color, $font-family, $font-size) {
+	background-color: $background-color !important;
+	color: $color;
+	font-family: $font-family;
+	font-size: $font-size;
+}
+
+@mixin box-shadow($params) {
+	-webkit-box-shadow: $params;
+	-moz-box-shadow: $params;
+	box-shadow: $params;
+}
+
+//PLACEHOLDER
+@mixin optional-at-root($sel) {
+	@at-root #{if(not &, $sel, selector-append(&, $sel))} {
+	  @content;
+	}
+  }
+  
+  @mixin placeholder {
+	@include optional-at-root('::-webkit-input-placeholder') {
+	  @content;
+	}
+  
+	@include optional-at-root(':-moz-placeholder') {
+	  @content;
+	}
+  
+	@include optional-at-root('::-moz-placeholder') {
+	  @content;
+	}
+  
+	@include optional-at-root(':-ms-input-placeholder') {
+	  @content;
+	}
+}
