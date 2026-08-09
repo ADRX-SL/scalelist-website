@@ -1,0 +1,362 @@
+[
+  {
+    "name": "picture-vault-keeper",
+    "project_id": "f36cf9e3-480e-4f85-837c-5d5796cae0ff",
+    "preview_url": "https://id-preview--f36cf9e3-480e-4f85-837c-5d5796cae0ff.lovable.app",
+    "editor_url": "https://lovable.dev/projects/f36cf9e3-480e-4f85-837c-5d5796cae0ff",
+    "last_edited": "2026-05-13",
+    "tech_stack": "tanstack_start_ts_2026-05-06",
+    "description": "ICP Page - Sales and Marketing page: A landing page for B2B Sales and Marketing teams.\n\nThis page showcases Scalelist, a B2B email and mobile number enrichment tool. It features sections on reaching decision-makers faster and provides clear calls to action for signing up. The design aligns with the ",
+    "screenshot": "screenshots/picture-vault-keeper.png"
+  },
+  {
+    "name": "clean-lead-bloom",
+    "project_id": "0f195352-1136-45e4-96fb-5903b6de4be5",
+    "preview_url": "https://id-preview--0f195352-1136-45e4-96fb-5903b6de4be5.lovable.app",
+    "editor_url": "https://lovable.dev/projects/0f195352-1136-45e4-96fb-5903b6de4be5",
+    "last_edited": "2026-05-11",
+    "tech_stack": "tanstack_start_ts_2026-05-06",
+    "description": "Enrich your B2B CRM with verified emails and mobile numbers on demand.\n\nScalelist provides RevOps teams with on-demand contact data enrichment for HubSpot, Salesforce, and Pipedrive. Features include a verified email and mobile number finder with a <5% bounce rate guarantee and global coverage. Bulk",
+    "screenshot": "screenshots/clean-lead-bloom.png"
+  },
+  {
+    "name": "data-heartbeat-15",
+    "project_id": "5d7b71e7-1ee1-4266-9c5e-babac72fdb5d",
+    "preview_url": "https://id-preview--5d7b71e7-1ee1-4266-9c5e-babac72fdb5d.lovable.app",
+    "editor_url": "https://lovable.dev/projects/5d7b71e7-1ee1-4266-9c5e-babac72fdb5d",
+    "last_edited": "2026-05-11",
+    "tech_stack": "tanstack_start_ts_2026-05-06",
+    "description": "Scalelist enriches B2B CRM data with verified emails and mobile numbers.\n\nThis application provides on-demand contact data enrichment for RevOps teams, integrating natively with HubSpot, Salesforce, and Pipedrive. It offers a verified email and mobile number finder with a <5% bounce rate guarantee a",
+    "screenshot": "screenshots/data-heartbeat-15.png"
+  },
+  {
+    "name": "lead-spark-partners",
+    "project_id": "bcf53d64-60f2-46b1-b101-181dffe60410",
+    "preview_url": "https://id-preview--bcf53d64-60f2-46b1-b101-181dffe60410.lovable.app",
+    "editor_url": "https://lovable.dev/projects/bcf53d64-60f2-46b1-b101-181dffe60410",
+    "last_edited": "2026-05-11",
+    "tech_stack": "tanstack_start_ts_2026-05-06",
+    "description": "Scalelist's Agency Partner Page generates leads for outbound agencies using B2B email and mobile number enrichment.\n\nThis landing page features a hero section with a compelling headline and subhead, a trust bar showcasing key metrics, and a logo strip of partner agencies. It also includes a comparis",
+    "screenshot": "screenshots/lead-spark-partners.png"
+  },
+  {
+    "name": "replica-reimagined-joy",
+    "project_id": "b995f06a-296f-4d99-8968-595eb4c6a7ee",
+    "preview_url": "https://id-preview--b995f06a-296f-4d99-8968-595eb4c6a7ee.lovable.app",
+    "editor_url": "https://lovable.dev/projects/b995f06a-296f-4d99-8968-595eb4c6a7ee",
+    "last_edited": "2026-04-30",
+    "tech_stack": "new_style_vite_react_shadcn_ts_testing_2026-01-08",
+    "description": "Scalelist's Integration page showcases seamless connections to various business tools.\n\nThis application displays available integrations, allowing users to explore how Scalelist connects with their existing software. It features a structured layout with clear sections for different integration categ",
+    "screenshot": "screenshots/replica-reimagined-joy.png"
+  },
+  {
+    "name": "asset-faithful-build",
+    "project_id": "dcbfc5c5-ec67-483c-80e6-5fdf03134ded",
+    "preview_url": "https://id-preview--dcbfc5c5-ec67-483c-80e6-5fdf03134ded.lovable.app",
+    "editor_url": "https://lovable.dev/projects/dcbfc5c5-ec67-483c-80e6-5fdf03134ded",
+    "last_edited": "2026-04-30",
+    "tech_stack": "new_style_vite_react_shadcn_ts_testing_2026-01-08",
+    "description": "Scalelist is a Chrome extension that provides accurate contact data for sales and marketing professionals.\n\nThis application enables users to find email and mobile numbers from any online source. It features a user-friendly interface designed to streamline data acquisition for outreach campaigns. Th",
+    "screenshot": "screenshots/asset-faithful-build.png"
+  },
+  {
+    "name": "get-their-digits",
+    "project_id": "0077e5e7-e646-4789-a5d0-d97fe9e59569",
+    "preview_url": "https://id-preview--0077e5e7-e646-4789-a5d0-d97fe9e59569.lovable.app",
+    "editor_url": "https://lovable.dev/projects/0077e5e7-e646-4789-a5d0-d97fe9e59569",
+    "last_edited": "2026-04-20",
+    "tech_stack": "vite_react_shadcn_ts_2026-03-20",
+    "description": "Find any lead's email & phone number with verified data.\n\nBuild lead lists from anywhere online and enrich your existing database in one click. Discover 80%+ of your leads' verified contact information worldwide. Stop losing deals due to unreachable prospects.",
+    "screenshot": "screenshots/get-their-digits.png"
+  },
+  {
+    "name": "nav-bar-hero",
+    "project_id": "87b53224-d69b-4f52-a243-ba330d586322",
+    "preview_url": "https://id-preview--87b53224-d69b-4f52-a243-ba330d586322.lovable.app",
+    "editor_url": "https://lovable.dev/projects/87b53224-d69b-4f52-a243-ba330d586322",
+    "last_edited": "2026-03-25",
+    "tech_stack": "vite_react_shadcn_ts_2026-03-20",
+    "description": "1. Top-left logo block\n\nReduce the size of the top-left logo area.\n\nRequirements:\n\n Make the icon slightly smaller.\n\n Make the word \u201cScalelist\u201d slightly smaller too.\n\n The logo icon and the text \u201cScalelist\u201d must have the exact same visual height.\n\n Use screenshots 2, 3, and 4 as reference for sizing",
+    "screenshot": "screenshots/nav-bar-hero.png"
+  },
+  {
+    "name": "honest-data-shine",
+    "project_id": "506b5f8c-7e1e-4274-998a-6b847c397142",
+    "preview_url": "https://id-preview--506b5f8c-7e1e-4274-998a-6b847c397142.lovable.app",
+    "editor_url": "https://lovable.dev/projects/506b5f8c-7e1e-4274-998a-6b847c397142",
+    "last_edited": "2026-03-02",
+    "tech_stack": "new_style_vite_react_shadcn_ts_testing_2026-01-08",
+    "description": "Do not redesign the entire section.\nDo not change fonts or global layout.\nOnly implement the changes below.\n\n1\ufe0f\u20e3 TEXT HIERARCHY FIX\n\nA) \u201cDATA COVERAGE\u201d\n\nMake DATA COVERAGE bold.\n\nKeep it uppercase.\n\nDo not change size.\n\nDo not change spacing.\n\nB) \u201cSee how we perform against competitors\u201d\n\nRemove the ",
+    "screenshot": "screenshots/honest-data-shine.png"
+  },
+  {
+    "name": "exact-match-badge",
+    "project_id": "f2a20674-2c00-4a52-a731-65b55fd753fb",
+    "preview_url": "https://id-preview--f2a20674-2c00-4a52-a731-65b55fd753fb.lovable.app",
+    "editor_url": "https://lovable.dev/projects/f2a20674-2c00-4a52-a731-65b55fd753fb",
+    "last_edited": "2026-03-02",
+    "tech_stack": "new_style_vite_react_shadcn_ts_testing_2026-01-08",
+    "description": "You will use the exact screenshot provided.\n\nYour task is extremely simple:\n\nKeep the entire design exactly as it is.\n\nDo not redesign.\nDo not adjust spacing.\nDo not move elements.\nDo not change fonts.\nDo not change layout.\nDo not change margins.\nDo not change container size.\nDo not touch shadows or",
+    "screenshot": "screenshots/exact-match-badge.png"
+  },
+  {
+    "name": "precise-layout-fix",
+    "project_id": "780bbe4b-3d40-4b13-87d1-6feca67f6a5f",
+    "preview_url": "https://id-preview--780bbe4b-3d40-4b13-87d1-6feca67f6a5f.lovable.app",
+    "editor_url": "https://lovable.dev/projects/780bbe4b-3d40-4b13-87d1-6feca67f6a5f",
+    "last_edited": "2026-03-02",
+    "tech_stack": "new_style_vite_react_shadcn_ts_testing_2026-01-08",
+    "description": "You will use the exact screenshot provided.\n\nYour task is extremely simple:\n\nKeep the entire design exactly as it is.\n\nDo not redesign.\nDo not adjust spacing.\nDo not move elements.\nDo not change fonts.\nDo not change layout.\nDo not change margins.\nDo not change container size.\nDo not touch shadows or",
+    "screenshot": "screenshots/precise-layout-fix.png"
+  },
+  {
+    "name": "pixel-perfect-fixer-05",
+    "project_id": "b452293b-4845-43af-9a12-051499b7a322",
+    "preview_url": "https://id-preview--b452293b-4845-43af-9a12-051499b7a322.lovable.app",
+    "editor_url": "https://lovable.dev/projects/b452293b-4845-43af-9a12-051499b7a322",
+    "last_edited": "2026-03-02",
+    "tech_stack": "new_style_vite_react_shadcn_ts_testing_2026-01-08",
+    "description": "You will use the exact screenshot provided.\n\nYour task is extremely simple:\n\nKeep the entire design exactly as it is.\n\nDo not redesign.\nDo not adjust spacing.\nDo not move elements.\nDo not change fonts.\nDo not change layout.\nDo not change margins.\nDo not change container size.\nDo not touch shadows or",
+    "screenshot": "screenshots/pixel-perfect-fixer-05.png"
+  },
+  {
+    "name": "scalelist-leadflow-08381",
+    "project_id": "1b3d15da-d674-4611-9be2-b1e0da18650f",
+    "preview_url": "https://id-preview--1b3d15da-d674-4611-9be2-b1e0da18650f.lovable.app",
+    "editor_url": "https://lovable.dev/projects/1b3d15da-d674-4611-9be2-b1e0da18650f",
+    "last_edited": "2025-11-04",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Design a directory page inspired by ColdIQ\u2019s AI Sales Tools Directory layout.\nUse Scalelist\u2019s design system (Inter font, color #5B88EA, white and cr\u00e8me background, clean margins, rounded corners, soft shadows, and generous whitespace).\n\nPage Goal\n\nCreate a visually clear and SEO-friendly directory l",
+    "screenshot": "screenshots/scalelist-leadflow-08381.png"
+  },
+  {
+    "name": "scalelist-leadflow",
+    "project_id": "ce7af51b-f669-4497-a5b7-b04501728319",
+    "preview_url": "https://id-preview--ce7af51b-f669-4497-a5b7-b04501728319.lovable.app",
+    "editor_url": "https://lovable.dev/projects/ce7af51b-f669-4497-a5b7-b04501728319",
+    "last_edited": "2025-10-28",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Design a directory page inspired by ColdIQ\u2019s AI Sales Tools Directory layout.\nUse Scalelist\u2019s design system (Inter font, color #5B88EA, white and cr\u00e8me background, clean margins, rounded corners, soft shadows, and generous whitespace).\n\nPage Goal\n\nCreate a visually clear and SEO-friendly directory l",
+    "screenshot": "screenshots/scalelist-leadflow.png"
+  },
+  {
+    "name": "usa-public-listed-companies",
+    "project_id": "c75db273-e873-4c11-bebe-446c68b783bb",
+    "preview_url": "https://id-preview--c75db273-e873-4c11-bebe-446c68b783bb.lovable.app",
+    "editor_url": "https://lovable.dev/projects/c75db273-e873-4c11-bebe-446c68b783bb",
+    "last_edited": "2025-10-24",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "\n\n\n\n\nPrompt for Lovable:\n\nCreate a programmatic SEO landing page template for a company profile, modeled after the layout in the uploaded screenshot (Company Page template).\n\nGoal:\nAdapt the structure to use dynamic placeholder variables instead of static values, while following SEO best practices.\n",
+    "screenshot": "screenshots/usa-public-listed-companies.png"
+  },
+  {
+    "name": "yc-founders",
+    "project_id": "c950df2a-8119-427f-a1a9-13ce045e9da6",
+    "preview_url": "https://id-preview--c950df2a-8119-427f-a1a9-13ce045e9da6.lovable.app",
+    "editor_url": "https://lovable.dev/projects/c950df2a-8119-427f-a1a9-13ce045e9da6",
+    "last_edited": "2025-10-23",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "\n\n- The 1st screenshot is 1 page that we created together\n- The 2nd screenshot is the final version once the variables are replaced by the data in the database\n- The 3rd screenshot is all the SEO errors that Yoast SEO discovered.\n\nHere's the prompt to improve the existing landing page with the varia",
+    "screenshot": "screenshots/yc-founders.png"
+  },
+  {
+    "name": "clay-lead-generation-agencies2",
+    "project_id": "d0192c07-76fa-4170-8058-6190bd97558d",
+    "preview_url": "https://id-preview--d0192c07-76fa-4170-8058-6190bd97558d.lovable.app",
+    "editor_url": "https://lovable.dev/projects/d0192c07-76fa-4170-8058-6190bd97558d",
+    "last_edited": "2025-10-23",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "\n\n\n\n\nPrompt for Lovable:\n\nCreate a programmatic SEO landing page template for a company profile, modeled after the layout in the uploaded screenshot (Company Page template).\n\nGoal:\nAdapt the structure to use dynamic placeholder variables instead of static values, while following SEO best practices.\n",
+    "screenshot": "screenshots/clay-lead-generation-agencies2.png"
+  },
+  {
+    "name": "clutch-lead-generation-agencies2",
+    "project_id": "1b2dc6c3-2fa3-445b-8df6-8949425aeabc",
+    "preview_url": "https://id-preview--1b2dc6c3-2fa3-445b-8df6-8949425aeabc.lovable.app",
+    "editor_url": "https://lovable.dev/projects/1b2dc6c3-2fa3-445b-8df6-8949425aeabc",
+    "last_edited": "2025-10-23",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "\n\n\n\n\nPrompt for Lovable:\n\nCreate a programmatic SEO landing page template for a company profile, modeled after the layout in the uploaded screenshot (Company Page template).\n\nGoal:\nAdapt the structure to use dynamic placeholder variables instead of static values, while following SEO best practices.\n",
+    "screenshot": "screenshots/clutch-lead-generation-agencies2.png"
+  },
+  {
+    "name": "g2-lead-generation-agencies2",
+    "project_id": "edba5dd1-bfe1-4b16-b565-a74d9a59fe49",
+    "preview_url": "https://id-preview--edba5dd1-bfe1-4b16-b565-a74d9a59fe49.lovable.app",
+    "editor_url": "https://lovable.dev/projects/edba5dd1-bfe1-4b16-b565-a74d9a59fe49",
+    "last_edited": "2025-10-23",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "\n\n\n\n\nPrompt for Lovable:\n\nCreate a programmatic SEO landing page template for a company profile, modeled after the layout in the uploaded screenshot (Company Page template).\n\nGoal:\nAdapt the structure to use dynamic placeholder variables instead of static values, while following SEO best practices.\n",
+    "screenshot": "screenshots/g2-lead-generation-agencies2.png"
+  },
+  {
+    "name": "scalelist-format-forge",
+    "project_id": "2a1ba907-a30a-479e-a93a-6540a8ce32df",
+    "preview_url": "https://id-preview--2a1ba907-a30a-479e-a93a-6540a8ce32df.lovable.app",
+    "editor_url": "https://lovable.dev/projects/2a1ba907-a30a-479e-a93a-6540a8ce32df",
+    "last_edited": "2025-10-21",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "You are designing a single programmatic SEO landing page for Scalelist.\n\nGoal:\nCreate one clean, SEO-optimized landing page that dynamically uses the variables below and ranks for the keyword:\n\u2192 {Company Name} email format\n\n---\n\n### VARIABLES TO USE\nThese fields must appear visually and dynamically ",
+    "screenshot": "screenshots/scalelist-format-forge.png"
+  },
+  {
+    "name": "clutch-lead-generation-agencies",
+    "project_id": "0648ea6a-3d7e-4a7d-b00b-f30b197740bc",
+    "preview_url": "https://id-preview--0648ea6a-3d7e-4a7d-b00b-f30b197740bc.lovable.app",
+    "editor_url": "https://lovable.dev/projects/0648ea6a-3d7e-4a7d-b00b-f30b197740bc",
+    "last_edited": "2025-10-20",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "I want you to copy exactly this landing page: https://clay-g2-lead-generation-agencies.lovable.app/\n\nIn the screenshot, I want you to modify those elements. \n\n- Replace {revenue} by {average hourly rate}\n- Replace {followers} by {minimum project side}\n\n\n\n",
+    "screenshot": "screenshots/clutch-lead-generation-agencies.png"
+  },
+  {
+    "name": "pseo-yc-directory",
+    "project_id": "132c05ea-28d5-432f-915d-c5f3bb3290bd",
+    "preview_url": "https://id-preview--132c05ea-28d5-432f-915d-c5f3bb3290bd.lovable.app",
+    "editor_url": "https://lovable.dev/projects/132c05ea-28d5-432f-915d-c5f3bb3290bd",
+    "last_edited": "2025-10-20",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "I also attached 2 screenshots. \n- Screenshot 1 is from the YC Founders directory for you to understand the context of the prompt\n- Screenshot 2 is from the ContactOut for you to understand the context of the prompt\n\nThis is the prompt for you lovable:\n\nDesign a modern, SEO-optimized landing page tha",
+    "screenshot": "screenshots/pseo-yc-directory.png"
+  },
+  {
+    "name": "clay-g2-lead-generation-agencies",
+    "project_id": "1a72f4c4-8628-46b3-89f4-418e645c34ec",
+    "preview_url": "https://id-preview--1a72f4c4-8628-46b3-89f4-418e645c34ec.lovable.app",
+    "editor_url": "https://lovable.dev/projects/1a72f4c4-8628-46b3-89f4-418e645c34ec",
+    "last_edited": "2025-10-17",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Goal: Create a YC-style company profile page layout for each lead generation company.\nReference: The Y Combinator company profile layout (like Airbnb\u2019s YC page).\nStyle: Use Scalelist\u2019s color palette \u2014 blue #5B88EA, white, cr\u00e8me, and black. Clean, modern, trustworthy aesthetic.\n\n\u2699\ufe0f Structure and Dyna",
+    "screenshot": "screenshots/clay-g2-lead-generation-agencies.png"
+  },
+  {
+    "name": "whats-an-email-address",
+    "project_id": "cc0b6973-d450-41f1-bff4-f0afad83fd3f",
+    "preview_url": "https://id-preview--cc0b6973-d450-41f1-bff4-f0afad83fd3f.lovable.app",
+    "editor_url": "https://lovable.dev/projects/cc0b6973-d450-41f1-bff4-f0afad83fd3f",
+    "last_edited": "2025-09-26",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Task:\nDesign a blog post page using the text provided below.\nThe design should follow the exact same style as the \u201cWhat Does BCC Mean in Email?\u201d blog post design (clean SaaS style, icon-based visuals, no cartoon characters).\n\nDesign Guidelines\n\nStyle: Modern SaaS blog, clean and minimal.\n\nColors: Us",
+    "screenshot": "screenshots/whats-an-email-address.png"
+  },
+  {
+    "name": "intent-data-craft",
+    "project_id": "4c4b26d1-908b-46a1-82eb-9e214db84b67",
+    "preview_url": "https://id-preview--4c4b26d1-908b-46a1-82eb-9e214db84b67.lovable.app",
+    "editor_url": "https://lovable.dev/projects/4c4b26d1-908b-46a1-82eb-9e214db84b67",
+    "last_edited": "2025-09-26",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Task:\nDesign a blog post page using the text provided below.\nThe design should follow the exact same style as the \u201cWhat Does BCC Mean in Email?\u201d blog post design (clean SaaS style, icon-based visuals, no cartoon characters).\n\nDesign Guidelines\n\nStyle: Modern SaaS blog, clean and minimal.\n\nColors: Us",
+    "screenshot": "screenshots/intent-data-craft.png"
+  },
+  {
+    "name": "abm-spark",
+    "project_id": "77d01d19-6018-47cc-8368-8f6a7dfda6f5",
+    "preview_url": "https://id-preview--77d01d19-6018-47cc-8368-8f6a7dfda6f5.lovable.app",
+    "editor_url": "https://lovable.dev/projects/77d01d19-6018-47cc-8368-8f6a7dfda6f5",
+    "last_edited": "2025-09-26",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Task:\nDesign a blog post page using the text provided below.\nThe design should follow the exact same style as the \u201cWhat Does BCC Mean in Email?\u201d blog post design (clean SaaS style, icon-based visuals, no cartoon characters).\n\nDesign Guidelines\n\nStyle: Modern SaaS blog, clean and minimal.\n\nColors: Us",
+    "screenshot": "screenshots/abm-spark.png"
+  },
+  {
+    "name": "scalelist-lead-guide",
+    "project_id": "9a675882-e14e-4783-9bb9-f574d1a0026c",
+    "preview_url": "https://id-preview--9a675882-e14e-4783-9bb9-f574d1a0026c.lovable.app",
+    "editor_url": "https://lovable.dev/projects/9a675882-e14e-4783-9bb9-f574d1a0026c",
+    "last_edited": "2025-09-26",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Task:\nDesign a blog post page using the text provided below.\nThe design should follow the exact same style as the \u201cWhat Does BCC Mean in Email?\u201d blog post design (clean SaaS style, icon-based visuals, no cartoon characters).\n\nDesign Guidelines\n\nStyle: Modern SaaS blog, clean and minimal.\n\nColors: Us",
+    "screenshot": "screenshots/scalelist-lead-guide.png"
+  },
+  {
+    "name": "domain-identity-design",
+    "project_id": "948d9533-5e21-4554-9ba5-f02c739abee2",
+    "preview_url": "https://id-preview--948d9533-5e21-4554-9ba5-f02c739abee2.lovable.app",
+    "editor_url": "https://lovable.dev/projects/948d9533-5e21-4554-9ba5-f02c739abee2",
+    "last_edited": "2025-09-26",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Task:\nDesign a blog post page using the text provided below.\nThe design should follow the exact same style as the \u201cWhat Does BCC Mean in Email?\u201d blog post design (clean SaaS style, icon-based visuals, no cartoon characters).\n\nDesign Guidelines\n\nStyle: Modern SaaS blog, clean and minimal.\n\nColors: Us",
+    "screenshot": "screenshots/domain-identity-design.png"
+  },
+  {
+    "name": "mql-conversion-engine",
+    "project_id": "e897fd49-7ebe-424b-a0af-63827191a607",
+    "preview_url": "https://id-preview--e897fd49-7ebe-424b-a0af-63827191a607.lovable.app",
+    "editor_url": "https://lovable.dev/projects/e897fd49-7ebe-424b-a0af-63827191a607",
+    "last_edited": "2025-09-26",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Task:\nDesign a blog post page using the text provided below.\nThe design should follow the exact same style as the \u201cWhat Does BCC Mean in Email?\u201d blog post design (clean SaaS style, icon-based visuals, no cartoon characters).\n\nDesign Guidelines\n\nStyle: Modern SaaS blog, clean and minimal.\n\nColors: Us",
+    "screenshot": "screenshots/mql-conversion-engine.png"
+  },
+  {
+    "name": "difference-between-lead-prospect",
+    "project_id": "32bdbac6-429f-48c2-822d-a3a0aa421ff6",
+    "preview_url": "https://id-preview--32bdbac6-429f-48c2-822d-a3a0aa421ff6.lovable.app",
+    "editor_url": "https://lovable.dev/projects/32bdbac6-429f-48c2-822d-a3a0aa421ff6",
+    "last_edited": "2025-09-26",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Task:\nDesign a blog post page using the text provided below.\nThe design should follow the exact same style as the \u201cWhat Does BCC Mean in Email?\u201d blog post design (clean SaaS style, icon-based visuals, no cartoon characters).\n\nDesign Guidelines\n\nStyle: Modern SaaS blog, clean and minimal.\n\nColors: Us",
+    "screenshot": "screenshots/difference-between-lead-prospect.png"
+  },
+  {
+    "name": "what-is-a-sales-qualified-lead",
+    "project_id": "fd763c2d-5e22-4e59-bb5a-557ec1646678",
+    "preview_url": "https://id-preview--fd763c2d-5e22-4e59-bb5a-557ec1646678.lovable.app",
+    "editor_url": "https://lovable.dev/projects/fd763c2d-5e22-4e59-bb5a-557ec1646678",
+    "last_edited": "2025-09-26",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Task:\nDesign a blog post page using the text provided below.\nThe design should follow the exact same style as the \u201cWhat Does BCC Mean in Email?\u201d blog post design (clean SaaS style, icon-based visuals, no cartoon characters).\n\nDesign Guidelines\n\nStyle: Modern SaaS blog, clean and minimal.\n\nColors: Us",
+    "screenshot": "screenshots/what-is-a-sales-qualified-lead.png"
+  },
+  {
+    "name": "what-does-cc-mean",
+    "project_id": "e27871ab-648d-4302-8a37-279c8b2560bf",
+    "preview_url": "https://id-preview--e27871ab-648d-4302-8a37-279c8b2560bf.lovable.app",
+    "editor_url": "https://lovable.dev/projects/e27871ab-648d-4302-8a37-279c8b2560bf",
+    "last_edited": "2025-09-25",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Task:\nDesign a blog post page using the text provided below.\nThe design should follow the exact same style as the \u201cWhat Does BCC Mean in Email?\u201d blog post design (clean SaaS style, icon-based visuals, no cartoon characters).\n\nDesign Guidelines\n\nStyle: Modern SaaS blog, clean and minimal.\n\nColors: Us",
+    "screenshot": "screenshots/what-does-cc-mean.png"
+  },
+  {
+    "name": "what-does-bcc-means",
+    "project_id": "1e50faa7-e986-4a4c-8de0-1a651dba7b30",
+    "preview_url": "https://id-preview--1e50faa7-e986-4a4c-8de0-1a651dba7b30.lovable.app",
+    "editor_url": "https://lovable.dev/projects/1e50faa7-e986-4a4c-8de0-1a651dba7b30",
+    "last_edited": "2025-09-25",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Task:\nDesign a full blog post page for \u201cWhat Does BCC Mean in Email? (Beginner\u2019s Guide for Business Teams)\u201d using the text provided below.\nThe design should combine text and illustrations into a clean, professional SaaS blog format.\n\nDesign Guidelines\n\nStyle: Modern SaaS blog, flat vector illustrati",
+    "screenshot": "screenshots/what-does-bcc-means.png"
+  },
+  {
+    "name": "scalelist-showdown",
+    "project_id": "b23be0d3-88ff-4e99-8f8f-8783a1492dcc",
+    "preview_url": "https://id-preview--b23be0d3-88ff-4e99-8f8f-8783a1492dcc.lovable.app",
+    "editor_url": "https://lovable.dev/projects/b23be0d3-88ff-4e99-8f8f-8783a1492dcc",
+    "last_edited": "2025-09-23",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "Build a landing page titled \u201cScalelist Alternatives\u201d modeled after Userlist\u2019s Alternatives page (cf screenshots attached) \n.\n\nPage Structure\n\nHero Section\n\nH1: \u201cCompare Scalelist Alternatives\u201d\n\nSubheading: Short intro (e.g., \u201cLooking for the right prospecting or email-finding tool? Here\u2019s how Scalel",
+    "screenshot": "screenshots/scalelist-showdown.png"
+  },
+  {
+    "name": "scalelist-vs-findymail",
+    "project_id": "243b93c6-6d15-4c16-ba51-86959bc09da5",
+    "preview_url": "https://id-preview--243b93c6-6d15-4c16-ba51-86959bc09da5.lovable.app",
+    "editor_url": "https://lovable.dev/projects/243b93c6-6d15-4c16-ba51-86959bc09da5",
+    "last_edited": "2025-09-11",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "hello",
+    "screenshot": "screenshots/scalelist-vs-findymail.png"
+  },
+  {
+    "name": "scalelist-vs-apollo",
+    "project_id": "b75be290-7062-4e17-aaec-0b2faad259cd",
+    "preview_url": "https://id-preview--b75be290-7062-4e17-aaec-0b2faad259cd.lovable.app",
+    "editor_url": "https://lovable.dev/projects/b75be290-7062-4e17-aaec-0b2faad259cd",
+    "last_edited": "2025-09-11",
+    "tech_stack": "vite_react_shadcn_ts_20250728_minor",
+    "description": "hello",
+    "screenshot": "screenshots/scalelist-vs-apollo.png"
+  }
+]
