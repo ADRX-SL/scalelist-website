@@ -89,6 +89,11 @@ if (!DRY && (!WP_URL || !WP_USER || !WP_APP_PASS)) {
 }
 const auth = DRY ? null : "Basic " + Buffer.from(`${WP_USER}:${WP_APP_PASS}`).toString("base64");
 
+// SiteGround Anti-Bot AI challenges requests with no/unknown User-Agent coming from
+// datacenter IPs (GitHub Actions runners). Identify ourselves like a normal client.
+const UA = "Mozilla/5.0 (compatible; ScalelistPublisher/1.0; +https://github.com/ADRX-SL/scalelist-website)";
+const baseHeaders = () => ({ "User-Agent": UA, Accept: "application/json", Authorization: auth });
+
 let failures = 0;
 for (const file of files) {
   const raw = readFileSync(join(PAGES_DIR, file), "utf8");
@@ -119,7 +124,7 @@ for (const file of files) {
   if (!existingId) {
     const lookup = await fetch(
       `${WP_URL.replace(/\/$/, "")}/wp-json/wp/v2/pages?slug=${encodeURIComponent(slug)}&status=any&per_page=1`,
-      { headers: { Authorization: auth } },
+      { headers: baseHeaders() },
     );
     if (lookup.ok) {
       const found = await lookup.json();
@@ -136,7 +141,7 @@ for (const file of files) {
 
   const res = await fetch(url, {
     method: "POST",
-    headers: { "Content-Type": "application/json", Authorization: auth },
+    headers: { ...baseHeaders(), "Content-Type": "application/json" },
     body: JSON.stringify(payload),
   });
   if (!res.ok) {
